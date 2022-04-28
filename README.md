@@ -1,2 +1,3 @@
-# WebDevTemplate
-Starter files for Web Development projects
+# Landing Page Project
+
+Landing page for Nadia De Vries
