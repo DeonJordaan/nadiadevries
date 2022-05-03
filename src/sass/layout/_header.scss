@@ -2,22 +2,38 @@
 
 .header {
 	height: 30vh;
-	position: relative;
+	position: absolute;
+	top: 7.5rem;
+	right: 7.5rem;
 
 	&__logo-box {
-		position: absolute;
-		top: 4rem;
-		left: 4rem;
+		position: relative;
+		// top: 4rem;
+		// left: 4rem;
 	}
 
 	&__text-box {
-		background-color: a.$color-tertiary-light;
-		color: a.$color-white;
-		position: absolute;
-		top: 40%;
-		left: 50%;
-		transform: translate(-50%, -50%);
+		background-color: a.$color-grey-light-2;
+		color: a.$color-grey-dark;
+		padding: 2rem;
+		border-radius: 5px;
+		// position: absolute;
+		// top: 40%;
+		// left: 50%;
+		// transform: translate(-50%, -50%);
 		text-align: center;
 		font-size: 2.5rem;
 	}
+}
+
+.header-primary {
+	display: flex;
+	flex-direction: column;
+}
+
+.hero__image img {
+	height: 100vh;
+	width: 100vw;
+	object-fit: cover;
+	overflow: hidden;
 }
