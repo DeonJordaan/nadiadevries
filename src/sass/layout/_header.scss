@@ -1,10 +1,10 @@
 @use '../abstracts' as a;
 
 .header {
-	height: 30vh;
-	position: absolute;
-	top: 7.5rem;
-	right: 7.5rem;
+	// height: 30vh;
+	// position: absolute;
+	// top: 6.5rem;
+	// right: 6.5rem;
 
 	&__logo-box {
 		position: relative;
@@ -13,9 +13,14 @@
 	}
 
 	&__text-box {
+		height: 30vh;
+		position: absolute;
+		top: 6.5rem;
+		right: 6.5rem;
+		opacity: 0.55;
 		background-color: a.$color-grey-light-2;
-		color: a.$color-grey-dark;
-		padding: 2rem;
+		color: a.$color-black;
+		padding: 1.5rem;
 		border-radius: 5px;
 		// position: absolute;
 		// top: 40%;
@@ -23,6 +28,18 @@
 		// transform: translate(-50%, -50%);
 		text-align: center;
 		font-size: 2.5rem;
+	}
+
+	&__construction {
+		// height: 30vh;
+		position: absolute;
+		bottom: 6.5rem;
+		right: 6.5rem;
+		opacity: 0.55;
+		background-color: a.$color-grey-light-2;
+		color: a.$color-black;
+		padding: 1rem;
+		border-radius: 5px;
 	}
 }
 
