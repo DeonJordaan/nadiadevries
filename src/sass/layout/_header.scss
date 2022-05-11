@@ -26,8 +26,8 @@
 
 	&__text-box {
 		position: absolute;
-		top: 6.5rem;
-		right: 6.5rem;
+		top: 5rem;
+		right: 5rem;
 		opacity: 0.55;
 		background-color: $color-grey-light-2;
 		color: $color-black;
@@ -47,6 +47,7 @@
 		}
 
 		@include respond(phone) {
+			opacity: 0.75;
 			left: 0;
 			right: 0;
 			margin-left: 2rem;
@@ -56,8 +57,8 @@
 
 	&__construction {
 		position: absolute;
-		bottom: 6.5rem;
-		right: 6.5rem;
+		bottom: 5rem;
+		right: 5rem;
 		opacity: 0.55;
 		background-color: $color-grey-light-2;
 		color: $color-black;
@@ -76,7 +77,39 @@
 		}
 
 		@include respond(phone) {
+			opacity: 0.75;
 			bottom: 1.2rem;
+			left: 0;
+			right: 0;
+			margin-left: 2rem;
+			margin-right: 2rem;
+		}
+	}
+
+	&__description {
+		position: absolute;
+		top: 40%;
+		right: 5rem;
+		width: 40vw;
+		opacity: 0.55;
+		background-color: $color-grey-light-2;
+		color: $color-black;
+		padding: 1rem;
+		border-radius: 5px;
+		text-align: center;
+
+		@include respond(tab-land) {
+			right: 4rem;
+		}
+
+		@include respond(tab-port) {
+			right: 3rem;
+		}
+
+		@include respond(phone) {
+			width: 90vw;
+			top: 30%;
+			opacity: 0.75;
 			left: 0;
 			right: 0;
 			margin-left: 2rem;
