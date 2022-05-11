@@ -1,15 +1,23 @@
 @use '../abstracts' as *;
 
 .header {
-	// height: 30vh;
-	// position: absolute;
-	// top: 6.5rem;
-	// right: 6.5rem;
+	background-image: url(../../assets/lotus-flower-SML.jpg);
+	background-size: cover;
+	background-position: top;
+	position: relative;
+	height: 100vh;
+	width: 100vw;
+
+	@include respond(phone) {
+		background-image: url(../../assets/lotus-flower-MBL.jpg);
+	}
+
+	@include respond(tab-port) {
+		background-image: url(../../assets/lotus-flower-TAB-PORT.jpg);
+	}
 
 	&__logo-box {
 		position: relative;
-		// top: 4rem;
-		// left: 4rem;
 	}
 
 	&__text-box {
@@ -36,12 +44,6 @@
 		}
 
 		@include respond(phone) {
-			// bottom: 1.2rem;
-			// width: auto;
-			// margin: 0 auto;
-			// right: 3rem;
-
-			// Works, but not really ideal
 			left: 0;
 			right: 0;
 			margin-left: 2rem;
@@ -50,7 +52,6 @@
 	}
 
 	&__construction {
-		// height: 30vh;
 		position: absolute;
 		bottom: 6.5rem;
 		right: 6.5rem;
@@ -59,6 +60,7 @@
 		color: $color-black;
 		padding: 1rem;
 		border-radius: 5px;
+		text-align: center;
 
 		@include respond(tab-land) {
 			bottom: 4rem;
@@ -72,11 +74,6 @@
 
 		@include respond(phone) {
 			bottom: 1.2rem;
-			// width: auto;
-			// margin: 0 auto;
-			// right: 3rem;
-
-			// Works, but not really ideal
 			left: 0;
 			right: 0;
 			margin-left: 2rem;
@@ -88,11 +85,4 @@
 .header-primary {
 	display: flex;
 	flex-direction: column;
-}
-
-.hero__image img {
-	height: 100vh;
-	width: 100vw;
-	object-fit: cover;
-	overflow: hidden;
 }
