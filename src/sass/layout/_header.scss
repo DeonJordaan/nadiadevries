@@ -28,6 +28,7 @@
 		position: absolute;
 		top: 5rem;
 		right: 5rem;
+		width: 50vw;
 		opacity: 0.55;
 		background-color: $color-grey-light-2;
 		color: $color-black;
@@ -44,14 +45,18 @@
 		@include respond(tab-port) {
 			top: 3rem;
 			right: 3rem;
+			width: 90vw;
+			margin-left: auto;
+			margin-right: auto;
 		}
 
 		@include respond(phone) {
 			opacity: 0.75;
 			left: 0;
 			right: 0;
-			margin-left: 2rem;
-			margin-right: 2rem;
+			width: 90vw;
+			margin-left: auto;
+			margin-right: auto;
 		}
 	}
 

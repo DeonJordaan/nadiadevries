@@ -1,7 +1,7 @@
 // MEDIA QUERY MANAGER
 /*
-
-0 - 600px:			Phone
+0 - 400px:			Small phone
+400 - 600px:		Phone
 600 - 900px:		Tablet Portrait
 900 - 1200px:		Tablet Landscape
 1200 - 1800px:		Desktop - Where our normal styles apply
@@ -9,6 +9,7 @@
 
 
 $breakpoint argument choices: 
+- sml-phone
 - phone
 - tab-port
 - tab-land
@@ -17,6 +18,7 @@ $breakpoint argument choices:
 1em = 16px (based on default browser font-size)
 
 Therefor:
+400px = 
 600px = 37.5em
 900px = 56.25em
 1200px = 75em
@@ -26,6 +28,13 @@ ORDER OF APPLYING MEDIA QUERIES: Base + Typography > General Layout + Grid > Pag
 */
 
 @mixin respond($breakpoint) {
+	//400px =
+	@if $breakpoint == sml-phone {
+		@media only screen and (max-width: 25em) {
+			@content;
+		}
+	}
+
 	//600px = 37.5em
 	@if $breakpoint == phone {
 		@media only screen and (max-width: 37.5em) {
