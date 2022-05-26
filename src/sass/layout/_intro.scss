@@ -4,27 +4,56 @@
 	color: green;
 	font-size: 3rem;
 	text-align: center;
-	line-height: 50vw;
+	// line-height: 50vw;
+
+	&__test {
+		font-weight: 200;
+		height: 95vh;
+		display: flex;
+		flex-direction: column;
+		margin: 3rem auto;
+		text-align: center;
+		justify-content: center;
+		// align-content: center;
+		width: 100vw;
+	}
+
+	&__stmnt {
+		font-size: 5rem;
+		transform: translate(-7.5rem, 0);
+	}
+
+	&__question {
+		font-size: 5rem;
+		transform: translate(7.5rem, 0);
+	}
 
 	&__001 {
 		background-color: #cf6a87;
+		padding: 10rem 0;
 	}
 	&__002 {
 		background-color: #f7d794;
+		padding: 10rem 0;
 	}
 	&__003 {
 		background-color: #f3a683;
+		padding: 10rem 0;
 	}
 	&__004 {
 		background-color: #f8a5c2;
+		padding: 10rem 0;
 	}
 	&__005 {
 		background-color: #63cdda;
+		padding: 10rem 0;
 	}
 	&__006 {
 		background-color: #e77f67;
+		padding: 10rem 0;
 	}
 	&__007 {
+		padding: 10rem 0;
 		background-color: #778beb;
 	}
 }
