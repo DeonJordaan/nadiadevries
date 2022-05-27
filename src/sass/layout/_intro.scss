@@ -1,35 +1,36 @@
 .intro {
 	position: relative;
 	height: 100vh;
-	width: 100vw;
-	color: green;
+	// width: 100vw;
+	color: black;
 	font-size: 3rem;
 	text-align: center;
 	// line-height: 50vw;
 	background-image: url('../../assets/aaron-sebastian-bfgEYpS0Znk-unsplash.jpg');
 	background-position: right 0 top 0;
 	background-size: cover;
+	overflow: hidden;
 
 	&__test {
-		font-weight: 200;
-		height: 95vh;
+		font-weight: 300;
+		height: 100vh;
 		display: flex;
 		flex-direction: column;
-		margin: 3rem auto;
+		// margin: 3rem auto;
 		text-align: center;
 		justify-content: center;
 		// align-content: center;
-		width: 100vw;
+		// width: 100%;
 	}
 
 	&__stmnt {
 		font-size: 5rem;
-		transform: translate(-7.5rem, -7rem);
+		transform: translate(-7.5rem, -5rem);
 	}
 
 	&__question {
 		font-size: 5rem;
-		transform: translate(7.5rem, -7rem);
+		transform: translate(7.5rem, -5rem);
 	}
 
 	&__scroll--label {
@@ -44,6 +45,20 @@
 		// @include respond(phone) {
 		// 	display: none;
 		// }
+	}
+
+	&__text {
+		font-size: 2rem;
+		display: flex;
+		flex-direction: column;
+		align-content: flex-end;
+		width: 50%;
+		padding: 10rem 5rem 2rem 5rem;
+		margin-left: auto;
+	}
+
+	&__text p {
+		padding: 1rem 0;
 	}
 
 	&__001 {
