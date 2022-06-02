@@ -1,24 +1,11 @@
 @use '../abstracts' as *;
 
 .header {
-	background-image: url(../../assets/lotus-flower-MED.jpg);
 	background-size: cover;
 	background-position: top;
 	position: relative;
 	height: 100vh;
 	width: 100vw;
-
-	@include respond(tab-land) {
-		background-image: url(../../assets/lotus-flower-SML.jpg);
-	}
-
-	@include respond(tab-port) {
-		background-image: url(../../assets/lotus-flower-TAB-PORT.jpg);
-	}
-
-	@include respond(phone) {
-		background-image: url(../../assets/lotus-flower-MBL.jpg);
-	}
 
 	&__logo-box {
 		position: relative;

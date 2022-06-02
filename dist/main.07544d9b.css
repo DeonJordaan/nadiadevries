@@ -1,0 +1,483 @@
+/*
+0 - 400px:			Small phone
+400 - 600px:		Phone
+600 - 900px:		Tablet Portrait
+900 - 1200px:		Tablet Landscape
+1200 - 1800px:		Desktop - Where our normal styles apply
+1800px + :			Big desktop
+
+
+$breakpoint argument choices: 
+- sml-phone
+- phone
+- tab-port
+- tab-land
+- big-desktop
+
+1em = 16px (based on default browser font-size)
+
+Therefor:
+400px = 
+600px = 37.5em
+900px = 56.25em
+1200px = 75em
+1800px = 112.5em
+
+ORDER OF APPLYING MEDIA QUERIES: Base + Typography > General Layout + Grid > Page Layout > Components
+*/
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+html {
+  font-size: 62.5%;
+  /*
+  @include respond(tab-land) {
+  	font-size: 56.25%; //1rem = 9px, 9 / 16 = 56.25%
+  }
+
+  @include respond(tab-port) {
+  	font-size: 50%; //1rem = 8px, 8 / 16 = 50%
+  }
+
+  @include respond(big-desktop) {
+  	font-size: 75%; //1rem = 12px, 12 / 16 = 75%
+  }
+     */
+}
+
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/*
+	2. Remove default margin
+  */
+* {
+  margin: 0;
+}
+
+/*
+	3. Allow percentage-based heights in the application
+  */
+html,
+body {
+  height: 100%;
+}
+
+/*
+	Typographic tweaks!
+	4. Add accessible line-height
+	5. Improve text rendering
+  */
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/*
+	6. Improve media defaults
+  */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/*
+	7. Remove built-in form typography styles
+  */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/*
+	8. Avoid text overflows
+  */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/*
+	9. Create a root stacking context
+  */
+#root,
+#__next {
+  isolation: isolate;
+}
+
+h1 {
+  font-weight: 200;
+}
+
+main {
+  /* make sure to cover the screen */
+  min-height: 100vh;
+  /* need a solid bg to hide the footer */
+  background: white;
+  /* put on top */
+  position: relative;
+  z-index: 1;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.7;
+}
+
+.heading-primary {
+  color: #fff;
+  text-transform: uppercase;
+  backface-visibility: hidden;
+  margin-bottom: 6rem;
+}
+.heading-primary__main {
+  font-size: 4rem;
+}
+@media only screen and (max-width: 75em) {
+  .heading-primary__main {
+    font-size: 3rem;
+  }
+}
+@media only screen and (max-width: 56.25em) {
+  .heading-primary__main {
+    font-size: 2.5rem;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .heading-primary__main {
+    font-size: 2.25rem;
+  }
+}
+@media only screen and (max-width: 25em) {
+  .heading-primary__main {
+    font-size: 2rem;
+  }
+}
+.heading-primary__sub {
+  font-size: 3rem;
+}
+@media only screen and (max-width: 75em) {
+  .heading-primary__sub {
+    font-size: 2.5rem;
+  }
+}
+@media only screen and (max-width: 56.25em) {
+  .heading-primary__sub {
+    font-size: 2rem;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .heading-primary__sub {
+    font-size: 1.8rem;
+  }
+}
+@media only screen and (max-width: 25em) {
+  .heading-primary__sub {
+    font-size: 1.5rem;
+  }
+}
+.heading-primary__text {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+@media only screen and (max-width: 75em) {
+  .heading-primary__text {
+    font-size: 1.5rem;
+  }
+}
+@media only screen and (max-width: 56.25em) {
+  .heading-primary__text {
+    font-size: 1.3rem;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .heading-primary__text {
+    font-size: 1.5rem;
+  }
+}
+@media only screen and (max-width: 25em) {
+  .heading-primary__text {
+    font-size: 1.2rem;
+  }
+}
+.heading-primary__desc {
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin-bottom: 1.5rem;
+  display: inline-block;
+}
+@media only screen and (max-width: 75em) {
+  .heading-primary__desc {
+    font-size: 1.5rem;
+  }
+}
+@media only screen and (max-width: 56.25em) {
+  .heading-primary__desc {
+    font-size: 1.3rem;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .heading-primary__desc {
+    font-size: 1.5rem;
+  }
+}
+@media only screen and (max-width: 25em) {
+  .heading-primary__desc {
+    font-size: 1.2rem;
+  }
+}
+
+.navigation {
+  height: 10vh;
+}
+.navigation__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  color: lightgray;
+  padding: 3rem 0;
+  font-size: 1.5rem;
+}
+.navigation__item {
+  opacity: 0;
+}
+
+.navigation__list li:hover {
+  transform: scale(1.05);
+}
+
+.navigation__list li:active {
+  border: 0.1px solid black;
+}
+
+ul {
+  list-style: none;
+}
+
+a:link {
+  color: black;
+  text-decoration: none;
+}
+
+.appear {
+  animation: appear 3s ease-out 1s;
+  animation-fill-mode: forwards;
+}
+
+footer {
+  font-size: 1.25rem;
+  color: rgb(89, 88, 88);
+  background-color: #e5bd2b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  bottom: 0;
+  left: 0;
+  height: 70px;
+}
+
+.footer-stuff {
+  max-width: 640px;
+}
+
+.header {
+  background-size: cover;
+  background-position: top;
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+}
+.header__logo-box {
+  position: relative;
+}
+.header__text-box {
+  position: absolute;
+  top: 5rem;
+  right: 5rem;
+  width: 50vw;
+  opacity: 0.55;
+  background-color: #eee;
+  color: #000;
+  padding: 1.5rem;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 2.5rem;
+}
+@media only screen and (max-width: 75em) {
+  .header__text-box {
+    top: 4rem;
+    right: 4rem;
+  }
+}
+@media only screen and (max-width: 56.25em) {
+  .header__text-box {
+    top: 3rem;
+    right: 3rem;
+    width: 90vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .header__text-box {
+    opacity: 0.75;
+    left: 0;
+    right: 0;
+    width: 90vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.header__construction {
+  position: absolute;
+  bottom: 5rem;
+  right: 5rem;
+  opacity: 0.55;
+  background-color: #eee;
+  color: #000;
+  padding: 1rem;
+  border-radius: 5px;
+  text-align: center;
+}
+@media only screen and (max-width: 75em) {
+  .header__construction {
+    bottom: 4rem;
+    right: 4rem;
+  }
+}
+@media only screen and (max-width: 56.25em) {
+  .header__construction {
+    bottom: 3rem;
+    right: 3rem;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .header__construction {
+    opacity: 0.75;
+    bottom: 1.2rem;
+    left: 0;
+    right: 0;
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+}
+.header__description {
+  position: absolute;
+  top: 40%;
+  right: 5rem;
+  width: 50vw;
+  opacity: 0.55;
+  background-color: #eee;
+  color: #000;
+  padding: 1rem;
+  border-radius: 5px;
+  text-align: center;
+}
+@media only screen and (max-width: 75em) {
+  .header__description {
+    right: 4rem;
+  }
+}
+@media only screen and (max-width: 56.25em) {
+  .header__description {
+    right: 3rem;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .header__description {
+    width: 90vw;
+    top: 30%;
+    opacity: 0.75;
+    left: 0;
+    right: 0;
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+}
+
+.header-primary {
+  display: flex;
+  flex-direction: column;
+}
+
+.intro {
+  position: relative;
+}
+.intro__script {
+  font-size: 3rem;
+  font-weight: 300;
+  color: black;
+  background: url("/aaron-sebastian-bfgEYpS0Znk-unsplash.5bd5ed77.jpg");
+  background-position: right 0 top 0;
+  background-size: cover;
+  overflow: hidden;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+}
+.intro__scroll-label {
+  position: absolute;
+  bottom: 1.75rem;
+  right: 1.75rem;
+  font-size: 1.5rem;
+  font-weight: 400;
+  opacity: 0;
+  transition: all ease-out 1s;
+}
+.intro__stmnt {
+  font-size: 5rem;
+  transform: translate(-7.5rem, -5rem);
+}
+.intro__question {
+  font-size: 5rem;
+  transform: translate(7.5rem, -5rem);
+}
+.intro__description {
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-content: flex-end;
+  width: 50%;
+  padding: 10rem 5rem 2rem 5rem;
+  margin-left: auto;
+}
+.intro__description p {
+  padding: 1rem 0;
+}
+
+.appear {
+  animation: appear 3s ease-out 1s;
+  animation-fill-mode: forwards;
+}
+
+.hero__image {
+  width: 100%;
+  margin: auto;
+}
+
+/*# sourceMappingURL=/main.07544d9b.css.map */
