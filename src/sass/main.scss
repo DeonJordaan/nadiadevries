@@ -1,6 +1,13 @@
-@use 'layout/header' as h;
+@use 'abstracts/mixins' as mxn;
+
+@use 'base/animations' as animate;
 @use 'base/base' as b;
 @use 'base/typography' as type;
-@use 'abstracts/mixins' as mxn;
-@use 'pages/home' as home;
+
+@use 'components/nav' as nav;
+
+@use 'layout/footer' as footer;
+@use 'layout/header' as h;
 @use 'layout/intro' as intro;
+
+@use 'pages/home' as home;

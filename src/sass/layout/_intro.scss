@@ -1,26 +1,33 @@
 .intro {
 	position: relative;
-	height: 100vh;
-	// width: 100vw;
-	color: black;
-	font-size: 3rem;
-	text-align: center;
-	// line-height: 50vw;
-	background-image: url('../../assets/aaron-sebastian-bfgEYpS0Znk-unsplash.jpg');
-	background-position: right 0 top 0;
-	background-size: cover;
-	overflow: hidden;
 
-	&__test {
+	&__script {
+		font-size: 3rem;
 		font-weight: 300;
-		height: 100vh;
+		color: black;
+		background-image: url('../../assets/aaron-sebastian-bfgEYpS0Znk-unsplash.jpg');
+		background-position: right 0 top 0;
+		background-size: cover;
+		overflow: hidden;
+		height: 90vh;
 		display: flex;
 		flex-direction: column;
-		// margin: 3rem auto;
 		text-align: center;
 		justify-content: center;
-		// align-content: center;
-		// width: 100%;
+	}
+
+	&__scroll-label {
+		position: absolute;
+		bottom: 1.75rem;
+		right: 1.75rem;
+		font-size: 1.5rem;
+		font-weight: 400;
+		opacity: 0;
+		transition: all ease-out 1s;
+
+		// @include respond(phone) {
+		// 	display: none;
+		// }
 	}
 
 	&__stmnt {
@@ -33,21 +40,7 @@
 		transform: translate(7.5rem, -5rem);
 	}
 
-	&__scroll--label {
-		position: absolute;
-		bottom: 0.75rem;
-		right: 1rem;
-		font-size: 1.5rem;
-		font-weight: 400;
-		opacity: 1;
-		transition: all ease-out 1s;
-
-		// @include respond(phone) {
-		// 	display: none;
-		// }
-	}
-
-	&__text {
+	&__description {
 		font-size: 2rem;
 		display: flex;
 		flex-direction: column;
@@ -57,36 +50,12 @@
 		margin-left: auto;
 	}
 
-	&__text p {
+	&__description p {
 		padding: 1rem 0;
 	}
+}
 
-	&__001 {
-		background-color: #cf6a87;
-		padding: 10rem 0;
-	}
-	&__002 {
-		background-color: #f7d794;
-		padding: 10rem 0;
-	}
-	&__003 {
-		background-color: #f3a683;
-		padding: 10rem 0;
-	}
-	&__004 {
-		background-color: #f8a5c2;
-		padding: 10rem 0;
-	}
-	&__005 {
-		background-color: #63cdda;
-		padding: 10rem 0;
-	}
-	&__006 {
-		background-color: #e77f67;
-		padding: 10rem 0;
-	}
-	&__007 {
-		padding: 10rem 0;
-		background-color: #778beb;
-	}
+.appear {
+	animation: appear 3s ease-out 1s;
+	animation-fill-mode: forwards;
 }

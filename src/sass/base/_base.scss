@@ -94,3 +94,18 @@ h6 {
 h1 {
 	font-weight: 200;
 }
+
+main {
+	/* make sure to cover the screen */
+	min-height: 100vh;
+
+	/* need a solid bg to hide the footer */
+	background: white;
+
+	/* put on top */
+	position: relative;
+	z-index: 1;
+
+	// font: 16px/1.4 system-ui, sans-serif;
+	// padding: 2rem;
+}

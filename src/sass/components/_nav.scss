@@ -1,0 +1,47 @@
+// @use '../base/animations' as *;
+
+.navigation {
+	height: 10vh;
+
+	&__list {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		color: lightgray;
+		padding: 3rem 0;
+		font-size: 1.5rem;
+	}
+
+	&__item {
+		opacity: 0;
+	}
+
+	// &__list:hover {
+	// }
+}
+
+.navigation__list li:hover {
+	transform: scale(1.05);
+}
+
+.navigation__list li:active {
+	// transform: scale(1.05);
+	border: 0.1px solid black;
+}
+
+ul {
+	list-style: none;
+}
+
+a:link {
+	color: black;
+	text-decoration: none;
+}
+
+// a:hover {
+// }
+
+.appear {
+	animation: appear 3s ease-out 1s;
+	animation-fill-mode: forwards;
+}
