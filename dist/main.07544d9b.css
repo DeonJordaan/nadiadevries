@@ -249,8 +249,8 @@ body {
   }
 }
 
-.navigation {
-  height: 10vh;
+.navigation__nav {
+  background-color: #ffffff;
 }
 .navigation__list {
   display: flex;
@@ -428,9 +428,10 @@ footer {
 }
 .intro__script {
   font-size: 3rem;
-  font-weight: 300;
-  color: black;
-  background: url("/aaron-sebastian-bfgEYpS0Znk-unsplash.5bd5ed77.jpg");
+  font-weight: 400;
+  color: white;
+  text-shadow: black 2px 2px;
+  background: url("/woman_on_grass.ee5619df.jpg");
   background-position: right 0 top 0;
   background-size: cover;
   overflow: hidden;
@@ -451,11 +452,11 @@ footer {
 }
 .intro__stmnt {
   font-size: 5rem;
-  transform: translate(-7.5rem, -5rem);
+  transform: translate(-15rem, -15rem);
 }
 .intro__question {
   font-size: 5rem;
-  transform: translate(7.5rem, -5rem);
+  transform: translate(15rem, -15rem);
 }
 .intro__description {
   font-size: 2rem;

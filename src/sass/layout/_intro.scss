@@ -3,9 +3,16 @@
 
 	&__script {
 		font-size: 3rem;
-		font-weight: 300;
-		color: black;
-		background: url('../assets/aaron-sebastian-bfgEYpS0Znk-unsplash.jpg');
+		font-weight: 400;
+		color: white;
+		// color: rgb(193, 218, 79);
+		// text-shadow: rgb(193, 218, 79) 2px 2px;
+		text-shadow: black 2px 2px;
+		// text-shadow: lightcoral 2px 2px;
+
+		background: url('../assets/woman_on_grass.jpg');
+		// background: url('../assets/DSC_1309.JPG');
+		// background: url('../assets/aaron-sebastian-bfgEYpS0Znk-unsplash.jpg');
 		background-position: right 0 top 0;
 		background-size: cover;
 		overflow: hidden;
@@ -32,12 +39,12 @@
 
 	&__stmnt {
 		font-size: 5rem;
-		transform: translate(-7.5rem, -5rem);
+		transform: translate(-15rem, -15rem);
 	}
 
 	&__question {
 		font-size: 5rem;
-		transform: translate(7.5rem, -5rem);
+		transform: translate(15rem, -15rem);
 	}
 
 	&__description {

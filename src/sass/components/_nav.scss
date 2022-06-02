@@ -1,7 +1,12 @@
 // @use '../base/animations' as *;
 
 .navigation {
-	height: 10vh;
+	// height: 10vh;
+
+	&__nav {
+		background-color: #ffffff;
+		// background-color: #d8be63;
+	}
 
 	&__list {
 		display: flex;
