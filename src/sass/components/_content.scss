@@ -4,14 +4,21 @@
 	position: relative;
 	display: flex;
 	flex-direction: column;
-	// padding: 12rem 0 10rem 0;
-	font-size: 1.8rem;
+	padding: 5rem 0 10rem 0;
+	font-size: 1.7rem;
 	// width: 100%;
+
+	&__heading {
+		font-family: $font-special;
+		color: $color-primary;
+		text-shadow: $text-shadow;
+		font-size: 6rem;
+	}
 
 	&__health {
 		display: flex;
 		flex-direction: row;
-		padding: 5rem;
+		// padding: 5rem;
 		// align-content: flex-end;
 		// margin-left: auto;
 
@@ -22,39 +29,45 @@
 		// }
 	}
 
+	&__healthy {
+		color: $color-primary;
+	}
+
 	&__coaching {
 		background-color: #d8be63;
-		margin: 5rem 0;
-		padding: 5rem;
+		padding: 5rem 0;
+		// padding: 5rem;
 	}
 
 	&__about {
-		margin: 5rem 0;
-		padding: 5rem;
+		padding: 5rem 0;
+		// padding: 5rem;
 	}
 
 	&__faq {
 		background-color: #d8be63;
-		margin: 5rem 0;
-		padding: 5rem;
+		padding: 5rem 0;
+		// padding: 5rem;
 	}
 
 	&__contact {
 		// margin: 5rem 0;
-		padding: 5rem;
+		// padding: 5rem;
 		display: flex;
 		justify-content: center;
-		width: 80vw;
+		padding: 5rem 0;
+		// width: 80vw;
 		// align-items: center;
 
 		// position: relative;
 		// padding: 12rem 0;
 		// max-width: 120rem;
 
-		// &--heading {
-		// 	width: 100%;
-		// 	text-align: center;
-		// }
+		&--heading {
+			width: 100%;
+			// text-align: center;
+			padding-bottom: 2rem;
+		}
 
 		// 	&--details {
 		// 		font-size: 1.5rem;
@@ -70,20 +83,44 @@
 	}
 }
 
+form {
+	width: 50vw;
+	background-color: $color-grey-light-1;
+	border: $color-grey-light-2;
+}
+
+input,
+textarea {
+	all: unset;
+}
+
 input,
 textarea {
 	width: 100%;
-	padding: 12px;
+	padding: 12px 20px;
 	border: 1px solid #ccc;
 	border-radius: 4px;
 	resize: none;
+	font-size: 1.4rem;
+
+	&:focus {
+		background-color: $color-primary-light;
+		border-bottom: 3px solid $color-primary;
+	}
 }
 
+// input:focus,
+// textarea:focus {
+// 	border: 1px solid $color-primary;
+// }
+
 label {
-	display: inline-block;
+	font-size: 1.4rem;
+	// display: inline-block;
 }
 
 button {
+	font-size: 1.5rem;
 	background-color: $color-primary;
 	border: 1px solid $color-grey-dark-2;
 	border-radius: 5px;
@@ -104,7 +141,7 @@ button:focus {
 .text-block {
 	// display: flex;
 	// flex-direction: column;
-	padding: 2rem 2rem 2rem 5rem;
+	padding: 2rem 20rem;
 }
 
 .appear {

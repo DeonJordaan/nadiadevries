@@ -16,6 +16,7 @@
 		color: lightgray;
 		padding: 1.5rem 0 0.5rem 0;
 		font-size: 1.8rem;
+		transition: transform 2s ease-out;
 	}
 
 	&__item {
@@ -28,6 +29,10 @@
 
 .navigation__list li:hover {
 	transform: scale(1.05);
+}
+
+.navigation__list li:visited {
+	color: black;
 }
 
 .navigation__list li:active {

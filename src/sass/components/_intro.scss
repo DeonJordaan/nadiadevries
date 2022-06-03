@@ -1,11 +1,11 @@
+@use '../abstracts' as *;
+
 .intro {
 	position: relative;
 
 	&__script {
-		font-size: 3rem;
-		font-weight: 400;
 		color: white;
-		text-shadow: black 2px 2px;
+		text-shadow: $text-shadow;
 		background-image: linear-gradient(
 				to bottom,
 				rgba(0, 0, 0, 0.25),
@@ -29,7 +29,7 @@
 		right: 3rem;
 		display: flex;
 		flex-direction: row;
-		font-size: 2rem;
+		font-size: 1.75rem;
 		font-weight: 400;
 		opacity: 0;
 		transition: all ease-out 1s;
@@ -47,8 +47,8 @@
 		}
 
 		&--label {
-			width: 3rem;
-			height: 3rem;
+			width: 2.5rem;
+			height: 2.5rem;
 			margin-left: 1rem;
 		}
 	}

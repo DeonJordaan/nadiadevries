@@ -31,19 +31,19 @@
 			<nav class="navigation__nav">
 				<ul class="navigation__list">
 					<li class="navigation__item">
-						<a href="#" class="navigation__link">Coaching</a>
+						<a href="#coaching" class="navigation__link">Coaching</a>
 					</li>
 					<li class="navigation__item">
-						<a href="#" class="navigation__link">Make an appointment</a>
+						<a href="#contact" class="navigation__link">Make an appointment</a>
 					</li>
 					<li class="navigation__item">
-						<a href="#" class="navigation__link">Health</a>
+						<a href="#health" class="navigation__link">Health</a>
 					</li>
 					<li class="navigation__item">
-						<a href="#" class="navigation__link">About me</a>
+						<a href="#about" class="navigation__link">About me</a>
 					</li>
 					<li class="navigation__item">
-						<a href="#" class="navigation__link">FAQ</a>
+						<a href="#faq" class="navigation__link">FAQ</a>
 					</li>
 				</ul>
 			</nav>
@@ -56,21 +56,25 @@
 					<span class="intro__stmnt">Everyone wants to be healthy,</span>
 					<span class="intro__question">but what does 'healthy' even mean?</span>
 					<div class="intro__scroll">
-						<span class="intro__scroll--text">Scroll</span> <svg class="intro__scroll--label" xmlns="http://www.w3.org/2000/svg" width="192" height="192" fill="#d8be63" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><polygon points="32 136 128 232 224 136 176 136 176 104 80 104 80 136 32 136" fill="none" stroke="#d8be63" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></polygon><line x1="176" y1="40" x2="80" y2="40" fill="none" stroke="#d8be63" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line><line x1="176" y1="72" x2="80" y2="72" fill="none" stroke="#d8be63" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line></svg>  
+						<span class="intro__scroll--text">Scroll</span> 
+						<svg class="intro__scroll--label" xmlns="http://www.w3.org/2000/svg" width="192" height="192" fill="#d8be63" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><path d="M229.7,141.7l-96,96a8.1,8.1,0,0,1-11.4,0l-96-96a8.4,8.4,0,0,1-1.7-8.8A8,8,0,0,1,32,128H72V104a8,8,0,0,1,8-8h96a8,8,0,0,1,8,8v24h40a8,8,0,0,1,7.4,4.9A8.4,8.4,0,0,1,229.7,141.7ZM184,40a8,8,0,0,0-8-8H80a8,8,0,0,0,0,16h96A8,8,0,0,0,184,40Zm0,32a8,8,0,0,0-8-8H80a8,8,0,0,0,0,16h96A8,8,0,0,0,184,72Z"></path></svg> 
 					</div>
 				</div>
 			</section>
 			<section class="content">
-				<section class="content__health">
+				<section id="health" class="content__health">
 				<!-- <img
 					src="../src/assets/istvan-hernek-vojJMSfe5Ps-unsplash.jpg"
 					alt="yellow origami flowers"
 					class="content__health--image"
 				/> -->
 				<div class="content__health--text text-block">
-					<h3>Becoming healthy</h3>
+					<div class="content__heading">
+						<h2>Becoming Healthy...</h2>
+					</div>
+					<h3>Where we begin</h3>
 					<p>
-						The world health organisation describes it as <br>
+						The world health organisation describes <strong><span class="content__healthy">health</span></strong> as <br>
 						<div class="quote">
 							"a state of complete physical, mental and social
 							well-being and not merely the absence of disease or
@@ -99,7 +103,7 @@
 					<!-- <p>But how does this apply to you?</p> -->
 				</div>
 			</section>
-			<section class="content__coaching">
+			<section id="coaching" class="content__coaching">
 				<div class="content__coaching--text text-block">
 				<h3>Coaching</h3>
 					<p>We will work with 3 core concepts: bio-individuality, primary food and secondary food.</p>
@@ -108,7 +112,7 @@
 					<p>It will be your responsibility and willingness to commit that will be the key to unlocking sustainable health through long-term behaviour change.</p>
 				</div>
 			</section>
-			<section class="content__about">
+			<section id="about" class="content__about">
 				<div class="content__about--text text-block">
 				<h3>About Me</h3>
 
@@ -117,7 +121,7 @@
 						Before shifting into coaching, I completed an Honours Bachelor of Accounting Science and worked as an accountant for 9 years. I also worked as a financial manager in the digital industry for 6 years.</p>
 				</div>
 			</section>
-			<section class="content__faq">
+			<section id="faq" class="content__faq">
 				<div class="content__faq--text text-block">
 					<h3>Frequently Asked Questions</h3>
 					<h4>What is a health coach?</h4>
@@ -135,27 +139,27 @@
 					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis earum perspiciatis facilis, praesentium maiores tenetur animi cum sequi ratione quis! Ducimus quibusdam ea assumenda aperiam reprehenderit cum magni debitis tempora nemo! Illum incidunt reiciendis distinctio laboriosam cupiditate, eaque ad hic!</p>
 				</div>
 			</section>
-			<section class="content__contact">
-				<div class="content__contact--text">
+			<section id="contact" class="content__contact">
+				<!-- <div class="content__contact--text"> -->
 				
 					<form id="form" class="form" method="POST" action="#">
 				<div class="content__contact--heading">
-					<h3 class="heading-secondary">Get in touch</h3>
+					<h3>Get in touch</h3>
 				</div>
 				<div class="form__group">
-					<input type="text" class="form__input" placeholder="Full Name" id="name" name="name" required="">
 					<label for="name" class="form__label">Full name</label>
+					<input type="text" class="form__input" placeholder="Full Name" id="name" name="name" required="">
 				</div>
 
 				<div class="form__group">
-					<input type="email" class="form__input" placeholder="Email address" id="email" name="_replyto" required="">
 					<label for="email" class="form__label">Email address</label>
+					<input type="email" class="form__input" placeholder="Email address" id="email" name="_replyto" required="">
 				</div>
 
 				<div class="form__group">
+					<label for="Message" class="form__label">Your message</label>
 					<textarea id="message" name="message" class="form__input" placeholder="Your message" rows="6" maxlength="300" required=""></textarea>
 
-					<label for="Message" class="form__label">Your message</label>
 				</div>
 
 				<div class="form__group">
@@ -171,19 +175,19 @@
 				<span class="content__contact--item">+27 72 068 0282</span>
 				<span class="content__contact--item">coach@nadiadevries.co.za</span>
 			</div> -->
-				</div>
+				<!-- </div> -->
 			</section>
 		</section>
 		</main>
 		<footer class="footer">
 			<img src="/ndv-logo-SML.6f5a14f4.png" alt="nadia de vries logo" class="footer__logo">
-			<div class="contact__details">
-				<span class="contact__item">Nadia de Vries</span>
-				<span class="contact__item">+27 72 068 0282</span>
-				<span class="contact__item">coach@nadiadevries.co.za</span>
-			</div>
-			<div class="footer-stuff">
-				Copyright &copy; 2022 - Nadia de Vries
+			<div class="footer__details">
+				<span class="footer__item">
+					Copyright &copy; 2022
+				</span>
+				<span class="footer__item">Nadia de Vries</span>
+				<span class="footer__item">+27 72 068 0282</span>
+				<span class="footer__item"><a href="#">coach@nadiadevries.co.za</a></span>
 			</div>
 		</footer>
 	</body>

@@ -258,10 +258,8 @@ body {
   position: relative;
 }
 .intro__script {
-  font-size: 3rem;
-  font-weight: 400;
   color: white;
-  text-shadow: black 2px 2px;
+  text-shadow: #999 2px 2px;
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("/woman_on_grass.ee5619df.jpg");
   background-position: right 0 top -15rem;
   background-size: cover;
@@ -279,7 +277,7 @@ body {
   right: 3rem;
   display: flex;
   flex-direction: row;
-  font-size: 2rem;
+  font-size: 1.75rem;
   font-weight: 400;
   opacity: 0;
   transition: all ease-out 1s;
@@ -289,8 +287,8 @@ body {
   vertical-align: middle;
 }
 .intro__scroll--label {
-  width: 3rem;
-  height: 3rem;
+  width: 2.5rem;
+  height: 2.5rem;
   margin-left: 1rem;
 }
 .intro__scroll svg {
@@ -318,48 +316,75 @@ body {
   position: relative;
   display: flex;
   flex-direction: column;
-  font-size: 1.8rem;
+  padding: 5rem 0 10rem 0;
+  font-size: 1.7rem;
+}
+.content__heading {
+  font-family: "Alex Brush", cursive;
+  color: #d8be63;
+  text-shadow: #999 2px 2px;
+  font-size: 6rem;
 }
 .content__health {
   display: flex;
   flex-direction: row;
-  padding: 5rem;
+}
+.content__healthy {
+  color: #d8be63;
 }
 .content__coaching {
   background-color: #d8be63;
-  margin: 5rem 0;
-  padding: 5rem;
+  padding: 5rem 0;
 }
 .content__about {
-  margin: 5rem 0;
-  padding: 5rem;
+  padding: 5rem 0;
 }
 .content__faq {
   background-color: #d8be63;
-  margin: 5rem 0;
-  padding: 5rem;
+  padding: 5rem 0;
 }
 .content__contact {
-  padding: 5rem;
   display: flex;
   justify-content: center;
-  width: 80vw;
+  padding: 5rem 0;
+}
+.content__contact--heading {
+  width: 100%;
+  padding-bottom: 2rem;
+}
+
+form {
+  width: 50vw;
+  background-color: #f7f7f7;
+  border: #eee;
+}
+
+input,
+textarea {
+  all: unset;
 }
 
 input,
 textarea {
   width: 100%;
-  padding: 12px;
+  padding: 12px 20px;
   border: 1px solid #ccc;
   border-radius: 4px;
   resize: none;
+  font-size: 1.4rem;
+}
+input:focus,
+textarea:focus {
+  background-color: #eed990;
+  border-bottom: 3px solid #d8be63;
 }
 
 label {
-  display: inline-block;
+  font-size: 1.4rem;
 }
 
 button {
+  font-size: 1.5rem;
   background-color: #d8be63;
   border: 1px solid #999;
   border-radius: 5px;
@@ -378,7 +403,7 @@ button:focus {
 }
 
 .text-block {
-  padding: 2rem 2rem 2rem 5rem;
+  padding: 2rem 20rem;
 }
 
 .appear {
@@ -417,8 +442,14 @@ footer {
   height: 100px;
 }
 
-.footer-stuff {
-  max-width: 640px;
+.footer__details {
+  font-size: 1.5rem;
+  width: 100%;
+  text-align: center;
+  display: inline;
+}
+.footer__item {
+  padding: 0 1rem;
 }
 
 .header__primary {
@@ -453,6 +484,7 @@ footer {
   color: lightgray;
   padding: 1.5rem 0 0.5rem 0;
   font-size: 1.8rem;
+  transition: transform 2s ease-out;
 }
 .navigation__item {
   opacity: 0;
@@ -460,6 +492,10 @@ footer {
 
 .navigation__list li:hover {
   transform: scale(1.05);
+}
+
+.navigation__list li:visited {
+  color: black;
 }
 
 .navigation__list li:active {

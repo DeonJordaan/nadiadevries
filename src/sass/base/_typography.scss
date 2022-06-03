@@ -1,7 +1,7 @@
 @use '../abstracts' as *;
 
 body {
-	font-family: 'Montserrat', sans-serif;
+	font-family: $font-default;
 	line-height: 1.7;
 }
 

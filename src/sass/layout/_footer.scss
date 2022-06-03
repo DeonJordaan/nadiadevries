@@ -24,8 +24,24 @@ footer {
 	// left: 1.5rem;
 }
 
-.footer-stuff {
-	max-width: 640px;
-	// margin: 0 auto;
-	// text-align: center;
+// .footer-stuff {
+// 	max-width: 640px;
+// 	// margin: 0 auto;
+// 	// text-align: center;
+// }
+
+.footer {
+	&__details {
+		font-size: 1.5rem;
+		// padding: 3rem 0 0 0;
+		width: 100%;
+		// display: flex;
+		// flex-direction: column;
+		text-align: center;
+		display: inline;
+	}
+
+	&__item {
+		padding: 0 1rem;
+	}
 }
