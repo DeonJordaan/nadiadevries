@@ -11,6 +11,12 @@
 			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400&display=swap"
 			rel="stylesheet"
 		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap"
+			rel="stylesheet"
+		/>
 
 		<link rel="stylesheet" href="./sass/main.scss" />
 		<link
@@ -24,25 +30,36 @@
 		<title id="title">Nadia De Vries - Health Coach</title>
 	</head>
 	<body id="main" class="container">
-		<nav class="navigation__nav">
-			<ul class="navigation__list">
-				<li class="navigation__item">
-					<a href="#" class="navigation__link">About</a>
-				</li>
-				<li class="navigation__item">
-					<a href="#" class="navigation__link">Your Health</a>
-				</li>
-				<li class="navigation__item">
-					<a href="#" class="navigation__link">FAQ</a>
-				</li>
-				<li class="navigation__item">
-					<a href="#" class="navigation__link">Health</a>
-				</li>
-				<li class="navigation__item">
-					<a href="#" class="navigation__link">Book now</a>
-				</li>
-			</ul>
-		</nav>
+		<header>
+			<span class="header__primary">
+				<h1 class="header__name">
+					<a href="#" class="navigation__link">Nadia de Vries</a>
+				</h1>
+				<h2 class="header__title">Health Coach</h2>
+			</span>
+
+			<nav class="navigation__nav">
+				<ul class="navigation__list">
+					<li class="navigation__item">
+						<a href="#" class="navigation__link">About me</a>
+					</li>
+					<li class="navigation__item">
+						<a href="#" class="navigation__link">Coaching</a>
+					</li>
+					<li class="navigation__item">
+						<a href="#" class="navigation__link"
+							>Make an appointment</a
+						>
+					</li>
+					<li class="navigation__item">
+						<a href="#" class="navigation__link">Health</a>
+					</li>
+					<li class="navigation__item">
+						<a href="#" class="navigation__link">FAQ</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
 
 		<main>
 			<section class="intro">
@@ -77,6 +94,11 @@
 			</section>
 		</main>
 		<footer class="footer">
+			<img
+				src="../src/assets/ndv-logo-SML.png"
+				alt="nadia de vries logo"
+				class="footer__logo"
+			/>
 			<div class="footer-stuff">
 				Copyright &copy; 2022 - Nadia de Vries
 			</div>

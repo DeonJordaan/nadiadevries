@@ -1,16 +1,27 @@
 footer {
 	font-size: 1.25rem;
 	color: rgb(89, 88, 88);
-	background-color: #e5bd2b;
+	// background-color: #e5bd2b;
+	background-color: #d8be63;
 	display: flex;
-	justify-content: center;
+	justify-content: space-between;
 	align-items: center;
 	position: sticky;
 	bottom: 0;
 	left: 0;
 	// width: 100%;
-	height: 70px;
+	height: auto;
+	// height: 70px;
 	// justify-content: center;
+	padding: 1.75rem 3rem;
+}
+
+.footer__logo {
+	// position: absolute;
+	width: 100px;
+	height: 100px;
+	// bottom: 1.5rem;
+	// left: 1.5rem;
 }
 
 .footer-stuff {

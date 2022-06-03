@@ -128,7 +128,12 @@ h6 {
 }
 
 h1 {
+  font-size: 5rem;
   font-weight: 200;
+}
+
+h2 {
+  font-weight: 300;
 }
 
 main {
@@ -250,15 +255,16 @@ body {
 }
 
 .navigation__nav {
-  background-color: #ffffff;
+  background-color: #d8be63;
 }
 .navigation__list {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  align-items: baseline;
   color: lightgray;
-  padding: 3rem 0;
-  font-size: 1.5rem;
+  padding: 1.5rem 0 0.5rem 0;
+  font-size: 1.8rem;
 }
 .navigation__item {
   opacity: 0;
@@ -289,138 +295,45 @@ a:link {
 footer {
   font-size: 1.25rem;
   color: rgb(89, 88, 88);
-  background-color: #e5bd2b;
+  background-color: #d8be63;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   position: sticky;
   bottom: 0;
   left: 0;
-  height: 70px;
+  height: auto;
+  padding: 1.75rem 3rem;
+}
+
+.footer__logo {
+  width: 100px;
+  height: 100px;
 }
 
 .footer-stuff {
   max-width: 640px;
 }
 
-.header {
-  background-size: cover;
-  background-position: top;
-  position: relative;
-  height: 100vh;
-  width: 100vw;
-}
-.header__logo-box {
-  position: relative;
-}
-.header__text-box {
-  position: absolute;
-  top: 5rem;
-  right: 5rem;
-  width: 50vw;
-  opacity: 0.55;
-  background-color: #eee;
-  color: #000;
-  padding: 1.5rem;
-  border-radius: 5px;
-  text-align: center;
-  font-size: 2.5rem;
-}
-@media only screen and (max-width: 75em) {
-  .header__text-box {
-    top: 4rem;
-    right: 4rem;
-  }
-}
-@media only screen and (max-width: 56.25em) {
-  .header__text-box {
-    top: 3rem;
-    right: 3rem;
-    width: 90vw;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-@media only screen and (max-width: 37.5em) {
-  .header__text-box {
-    opacity: 0.75;
-    left: 0;
-    right: 0;
-    width: 90vw;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-.header__construction {
-  position: absolute;
-  bottom: 5rem;
-  right: 5rem;
-  opacity: 0.55;
-  background-color: #eee;
-  color: #000;
-  padding: 1rem;
-  border-radius: 5px;
-  text-align: center;
-}
-@media only screen and (max-width: 75em) {
-  .header__construction {
-    bottom: 4rem;
-    right: 4rem;
-  }
-}
-@media only screen and (max-width: 56.25em) {
-  .header__construction {
-    bottom: 3rem;
-    right: 3rem;
-  }
-}
-@media only screen and (max-width: 37.5em) {
-  .header__construction {
-    opacity: 0.75;
-    bottom: 1.2rem;
-    left: 0;
-    right: 0;
-    margin-left: 2rem;
-    margin-right: 2rem;
-  }
-}
-.header__description {
-  position: absolute;
-  top: 40%;
-  right: 5rem;
-  width: 50vw;
-  opacity: 0.55;
-  background-color: #eee;
-  color: #000;
-  padding: 1rem;
-  border-radius: 5px;
-  text-align: center;
-}
-@media only screen and (max-width: 75em) {
-  .header__description {
-    right: 4rem;
-  }
-}
-@media only screen and (max-width: 56.25em) {
-  .header__description {
-    right: 3rem;
-  }
-}
-@media only screen and (max-width: 37.5em) {
-  .header__description {
-    width: 90vw;
-    top: 30%;
-    opacity: 0.75;
-    left: 0;
-    right: 0;
-    margin-left: 2rem;
-    margin-right: 2rem;
-  }
-}
-
-.header-primary {
+.header__primary {
+  background-color: #d8be63;
+  color: black;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0;
+}
+.header__name {
+  opacity: 0;
+  font-size: 9rem;
+  font-family: "Alex Brush", cursive;
+  line-height: 1.25;
+}
+.header__title {
+  opacity: 0;
+  font-size: 4rem;
+  line-height: 1.25;
 }
 
 .intro {
@@ -431,21 +344,18 @@ footer {
   font-weight: 400;
   color: white;
   text-shadow: black 2px 2px;
-  background: url("/woman_on_grass.ee5619df.jpg");
-  background-position: right 0 top 0;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("/woman_on_grass.ee5619df.jpg");
+  background-position: right 0 top -15rem;
   background-size: cover;
   overflow: hidden;
-  height: 90vh;
+  height: 80vh;
   display: flex;
   flex-direction: column;
   text-align: center;
   justify-content: center;
 }
 .intro__scroll-label {
-  position: absolute;
-  bottom: 1.75rem;
-  right: 1.75rem;
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: 400;
   opacity: 0;
   transition: all ease-out 1s;
@@ -459,7 +369,7 @@ footer {
   transform: translate(15rem, -15rem);
 }
 .intro__description {
-  font-size: 2rem;
+  font-size: 1.8rem;
   display: flex;
   flex-direction: column;
   align-content: flex-end;

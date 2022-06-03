@@ -5,18 +5,17 @@
 		font-size: 3rem;
 		font-weight: 400;
 		color: white;
-		// color: rgb(193, 218, 79);
-		// text-shadow: rgb(193, 218, 79) 2px 2px;
 		text-shadow: black 2px 2px;
-		// text-shadow: lightcoral 2px 2px;
-
-		background: url('../assets/woman_on_grass.jpg');
-		// background: url('../assets/DSC_1309.JPG');
-		// background: url('../assets/aaron-sebastian-bfgEYpS0Znk-unsplash.jpg');
-		background-position: right 0 top 0;
+		background-image: linear-gradient(
+				to bottom,
+				rgba(0, 0, 0, 0.25),
+				rgba(0, 0, 0, 0.25)
+			),
+			url('../assets/woman_on_grass.jpg');
+		background-position: right 0 top -15rem;
 		background-size: cover;
 		overflow: hidden;
-		height: 90vh;
+		height: 80vh;
 		display: flex;
 		flex-direction: column;
 		text-align: center;
@@ -24,10 +23,10 @@
 	}
 
 	&__scroll-label {
-		position: absolute;
-		bottom: 1.75rem;
-		right: 1.75rem;
-		font-size: 1.5rem;
+		// position: absolute;
+		// bottom: 3rem;
+		// right: 3rem;
+		font-size: 2rem;
 		font-weight: 400;
 		opacity: 0;
 		transition: all ease-out 1s;
@@ -48,7 +47,7 @@
 	}
 
 	&__description {
-		font-size: 2rem;
+		font-size: 1.8rem;
 		display: flex;
 		flex-direction: column;
 		align-content: flex-end;

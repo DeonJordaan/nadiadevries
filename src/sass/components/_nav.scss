@@ -4,17 +4,18 @@
 	// height: 10vh;
 
 	&__nav {
-		background-color: #ffffff;
-		// background-color: #d8be63;
+		// background-color: #ffffff;
+		background-color: #d8be63;
 	}
 
 	&__list {
 		display: flex;
 		flex-direction: row;
 		justify-content: space-around;
+		align-items: baseline;
 		color: lightgray;
-		padding: 3rem 0;
-		font-size: 1.5rem;
+		padding: 1.5rem 0 0.5rem 0;
+		font-size: 1.8rem;
 	}
 
 	&__item {
