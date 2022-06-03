@@ -2,7 +2,7 @@
 
 .header {
 	&__primary {
-		background-color: #d8be63;
+		background-color: $color-primary;
 		color: black;
 		display: flex;
 		flex-direction: column;
@@ -12,7 +12,7 @@
 	}
 
 	&__name {
-		opacity: 0;
+		opacity: 1;
 		font-size: 9rem;
 		font-family: 'Alex Brush', cursive;
 		line-height: 1.25;

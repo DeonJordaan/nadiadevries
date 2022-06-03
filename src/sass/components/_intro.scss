@@ -14,26 +14,47 @@
 			url('../assets/woman_on_grass.jpg');
 		background-position: right 0 top -15rem;
 		background-size: cover;
+		box-shadow: 0 12px 12px hsla(0deg, 0%, 0%, 0.35);
 		overflow: hidden;
-		height: 80vh;
+		height: 75vh;
 		display: flex;
 		flex-direction: column;
 		text-align: center;
 		justify-content: center;
 	}
 
-	&__scroll-label {
-		// position: absolute;
-		// bottom: 3rem;
-		// right: 3rem;
+	&__scroll {
+		position: absolute;
+		bottom: 5rem;
+		right: 3rem;
+		display: flex;
+		flex-direction: row;
 		font-size: 2rem;
 		font-weight: 400;
 		opacity: 0;
 		transition: all ease-out 1s;
+		// display: flex;
+		// flex-direction: row;
 
 		// @include respond(phone) {
 		// 	display: none;
 		// }
+
+		&--text,
+		&--label {
+			display: inline-block;
+			vertical-align: middle;
+		}
+
+		&--label {
+			width: 3rem;
+			height: 3rem;
+			margin-left: 1rem;
+		}
+	}
+
+	&__scroll svg {
+		transition: all ease-out 1s;
 	}
 
 	&__stmnt {
@@ -45,23 +66,13 @@
 		font-size: 5rem;
 		transform: translate(15rem, -15rem);
 	}
-
-	&__description {
-		font-size: 1.8rem;
-		display: flex;
-		flex-direction: column;
-		align-content: flex-end;
-		width: 50%;
-		padding: 10rem 5rem 2rem 5rem;
-		margin-left: auto;
-	}
-
-	&__description p {
-		padding: 1rem 0;
-	}
 }
 
-.appear {
-	animation: appear 3s ease-out 1s;
-	animation-fill-mode: forwards;
+.fade {
+	color: transparent;
+	text-shadow: none;
+}
+
+.fade svg {
+	opacity: 0;
 }

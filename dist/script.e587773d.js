@@ -118,6 +118,18 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 
   return newRequire;
 })({"javascript/script.js":[function(require,module,exports) {
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
+
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
+function _iterableToArrayLimit(arr, i) { var _i = arr == null ? null : typeof Symbol !== "undefined" && arr[Symbol.iterator] || arr["@@iterator"]; if (_i == null) return; var _arr = []; var _n = true; var _d = false; var _s, _e; try { for (_i = _i.call(arr); !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
+
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
 // Init on DOM Load
 document.addEventListener('DOMContentLoaded', setTimeout(function () {
   navAnimation();
@@ -125,17 +137,47 @@ document.addEventListener('DOMContentLoaded', setTimeout(function () {
 }, 50));
 
 function navAnimation() {
-  var headerName = document.querySelector('.header__name');
+  // const headerName = document.querySelector('.header__name');
   var headerTitle = document.querySelector('.header__title');
-  var scrollLabel = document.querySelector('.intro__scroll-label');
+  var scrollLabel = document.querySelector('.intro__scroll');
   var navItems = document.querySelectorAll('.navigation__item'); // const welcomeSection = document.querySelector('welcome-section');
+  // headerName.classList.add('appear');
 
-  headerName.classList.add('appear');
   headerTitle.classList.add('appear');
   scrollLabel.classList.add('appear');
   navItems.forEach(function (item) {
     return item.classList.add('appear');
   }); // welcomeSection.classList.add('appear	');
+} // Intersection Observer to fade out scroll label
+
+
+function scrollLabelFade() {
+  var headerSection = document.querySelector('.header__name');
+  var scrollLabel = document.querySelectorAll('.intro__scroll');
+
+  var observerCallback = function observerCallback(entries) {
+    var _entries = _slicedToArray(entries, 1),
+        entry = _entries[0];
+
+    if (!entry.isIntersecting) {
+      scrollLabel.forEach(function (item) {
+        return item.classList.add('fade');
+      });
+    } else {
+      scrollLabel.forEach(function (item) {
+        return item.classList.remove('fade');
+      });
+    } // if (!entry.isIntersecting) scrollLabel.classList.remove('appear');
+    // else scrollLabel.classList.add('appear');
+
+  };
+
+  var observerOptions = {
+    root: null,
+    threshold: 0
+  };
+  var headerObserver = new IntersectionObserver(observerCallback, observerOptions);
+  headerObserver.observe(headerSection);
 }
 },{}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];

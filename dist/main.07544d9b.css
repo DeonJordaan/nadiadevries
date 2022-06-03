@@ -254,6 +254,314 @@ body {
   }
 }
 
+.intro {
+  position: relative;
+}
+.intro__script {
+  font-size: 3rem;
+  font-weight: 400;
+  color: white;
+  text-shadow: black 2px 2px;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("/woman_on_grass.ee5619df.jpg");
+  background-position: right 0 top -15rem;
+  background-size: cover;
+  box-shadow: 0 12px 12px hsla(0deg, 0%, 0%, 0.35);
+  overflow: hidden;
+  height: 75vh;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+}
+.intro__scroll {
+  position: absolute;
+  bottom: 5rem;
+  right: 3rem;
+  display: flex;
+  flex-direction: row;
+  font-size: 2rem;
+  font-weight: 400;
+  opacity: 0;
+  transition: all ease-out 1s;
+}
+.intro__scroll--text, .intro__scroll--label {
+  display: inline-block;
+  vertical-align: middle;
+}
+.intro__scroll--label {
+  width: 3rem;
+  height: 3rem;
+  margin-left: 1rem;
+}
+.intro__scroll svg {
+  transition: all ease-out 1s;
+}
+.intro__stmnt {
+  font-size: 5rem;
+  transform: translate(-15rem, -15rem);
+}
+.intro__question {
+  font-size: 5rem;
+  transform: translate(15rem, -15rem);
+}
+
+.fade {
+  color: transparent;
+  text-shadow: none;
+}
+
+.fade svg {
+  opacity: 0;
+}
+
+.content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.8rem;
+}
+.content__health {
+  display: flex;
+  flex-direction: row;
+  padding: 5rem;
+}
+.content__coaching {
+  background-color: #d8be63;
+  margin: 5rem 0;
+  padding: 5rem;
+}
+.content__about {
+  margin: 5rem 0;
+  padding: 5rem;
+}
+.content__faq {
+  background-color: #d8be63;
+  margin: 5rem 0;
+  padding: 5rem;
+}
+.content__contact {
+  margin: 5rem 0;
+  padding: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.content__contact--heading {
+  width: 100%;
+  text-align: center;
+}
+.content__contact--details {
+  font-size: 1.5rem;
+  padding: 3rem 0 0 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.content__contact--item {
+  line-height: 1.6;
+}
+
+.content p {
+  padding: 1rem 0;
+}
+
+.text-block {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 2rem 2rem 5rem;
+}
+
+.appear {
+  animation: appear 3s ease-out 1s;
+  animation-fill-mode: forwards;
+}
+
+.quote {
+  padding: 1rem;
+  margin: 1rem 2rem;
+  background-color: lightgray;
+  border-radius: 5px;
+  width: max-content;
+}
+
+h4 {
+  padding-top: 2rem;
+}
+
+.form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.form__group:not(:last-child) {
+  margin-bottom: 2rem;
+  width: 50%;
+}
+.form__input {
+  font-size: 1.4rem;
+  font-family: inherit;
+  color: inherit;
+  padding: 1.5rem 2rem;
+  border-radius: 5px;
+  border-bottom: 3px solid transparent;
+  width: 100%;
+  display: block;
+  transition: all 0.3s;
+  /*
+  @include respond(tab-port) {
+  	width: 100%;
+  }
+  */
+}
+.form__input:focus {
+  outline: none;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+  border-bottom: 3px solid #333;
+}
+.form__input:focus:invalid {
+  border-bottom: 3px solid #333;
+}
+.form__input::-webkit-input-placeholder {
+  color: #333;
+}
+.form__label {
+  font-size: 1.4rem;
+  color: #333;
+  font-weight: 400;
+  margin-left: 2rem;
+  margin-top: 0.7rem;
+  display: block;
+  transition: all 0.3s;
+}
+.form__input:placeholder-shown + .form__label {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-4rem);
+}
+
+.push-button {
+  position: relative;
+  border: none;
+  background: transparent;
+  padding: 0;
+  cursor: pointer;
+  outline-offset: 4px;
+  transition: filter 250ms;
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
+}
+
+.shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  background: hsla(0deg, 0%, 0%, 0.25);
+  will-change: transform;
+  transform: translateY(2px);
+  transition: transform 600ms cubic-bezier(0.3, 0.7, 0.4, 1);
+}
+
+.edge {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  background: linear-gradient(to left, hsl(220deg, 50%, 30%) 0%, hsl(220deg, 100%, 57%) 8%, hsl(220deg, 100%, 60%) 92%, hsl(220deg, 50%, 30%) 100%);
+}
+
+.front {
+  display: block;
+  position: relative;
+  padding: 12px 60px;
+  border-radius: 10px;
+  font-size: 1.25rem;
+  color: white;
+  background: hsl(220deg, 1%, 45%);
+  will-change: transform;
+  transform: translateY(-4px);
+  transition: transform 600ms cubic-bezier(0.3, 0.7, 0.4, 1);
+}
+
+.push-button:hover {
+  filter: brightness(105%);
+}
+
+.push-button:hover .front {
+  transform: translateY(-5px);
+  transition: treansform 250ms cubic-bezier(0.3, 0.7, 0.4, 1.25);
+}
+
+.push-button:hover .shadow {
+  transform: translateY(3px);
+  transition: treansform 250ms cubic-bezier(0.3, 0.7, 0.4, 1.25);
+}
+
+.push-button:active .front {
+  transform: translateY(-2px);
+  transition: transform 34ms;
+}
+
+.push-button:active .shadow {
+  transform: translateY(1px);
+  transition: transform 34ms;
+}
+
+.push-button:focus:not(:focus-visible) {
+  outline: none;
+}
+
+footer {
+  font-size: 1.25rem;
+  color: rgb(89, 88, 88);
+  background-color: #d8be63;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  bottom: 0;
+  left: 0;
+  height: auto;
+  padding: 1.75rem 3rem;
+}
+
+.footer__logo {
+  width: 100px;
+  height: 100px;
+}
+
+.footer-stuff {
+  max-width: 640px;
+}
+
+.header__primary {
+  background-color: #d8be63;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0;
+}
+.header__name {
+  opacity: 1;
+  font-size: 9rem;
+  font-family: "Alex Brush", cursive;
+  line-height: 1.25;
+}
+.header__title {
+  opacity: 0;
+  font-size: 4rem;
+  line-height: 1.25;
+}
+
 .navigation__nav {
   background-color: #d8be63;
 }
@@ -290,105 +598,6 @@ a:link {
 .appear {
   animation: appear 3s ease-out 1s;
   animation-fill-mode: forwards;
-}
-
-footer {
-  font-size: 1.25rem;
-  color: rgb(89, 88, 88);
-  background-color: #d8be63;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: sticky;
-  bottom: 0;
-  left: 0;
-  height: auto;
-  padding: 1.75rem 3rem;
-}
-
-.footer__logo {
-  width: 100px;
-  height: 100px;
-}
-
-.footer-stuff {
-  max-width: 640px;
-}
-
-.header__primary {
-  background-color: #d8be63;
-  color: black;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 1rem 0;
-}
-.header__name {
-  opacity: 0;
-  font-size: 9rem;
-  font-family: "Alex Brush", cursive;
-  line-height: 1.25;
-}
-.header__title {
-  opacity: 0;
-  font-size: 4rem;
-  line-height: 1.25;
-}
-
-.intro {
-  position: relative;
-}
-.intro__script {
-  font-size: 3rem;
-  font-weight: 400;
-  color: white;
-  text-shadow: black 2px 2px;
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("/woman_on_grass.ee5619df.jpg");
-  background-position: right 0 top -15rem;
-  background-size: cover;
-  overflow: hidden;
-  height: 80vh;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  justify-content: center;
-}
-.intro__scroll-label {
-  font-size: 2rem;
-  font-weight: 400;
-  opacity: 0;
-  transition: all ease-out 1s;
-}
-.intro__stmnt {
-  font-size: 5rem;
-  transform: translate(-15rem, -15rem);
-}
-.intro__question {
-  font-size: 5rem;
-  transform: translate(15rem, -15rem);
-}
-.intro__description {
-  font-size: 1.8rem;
-  display: flex;
-  flex-direction: column;
-  align-content: flex-end;
-  width: 50%;
-  padding: 10rem 5rem 2rem 5rem;
-  margin-left: auto;
-}
-.intro__description p {
-  padding: 1rem 0;
-}
-
-.appear {
-  animation: appear 3s ease-out 1s;
-  animation-fill-mode: forwards;
-}
-
-.hero__image {
-  width: 100%;
-  margin: auto;
 }
 
 /*# sourceMappingURL=/main.07544d9b.css.map */

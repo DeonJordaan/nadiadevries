@@ -1,3 +1,5 @@
+@use '../abstracts' as *;
+
 html {
 	//This defines what 1rem is
 	font-size: 62.5%; //1rem = 10px; 10px / 16px = 62.5%
@@ -99,6 +101,14 @@ h1 {
 h2 {
 	font-weight: 300;
 }
+
+// header {
+// 	background: linear-gradient(
+// 		to top,
+// 		rgba($color-primary-light, 1),
+// 		rgba($color-primary-dark, 0.8)
+// 	);
+// }
 
 main {
 	/* make sure to cover the screen */

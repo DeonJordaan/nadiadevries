@@ -1,11 +1,11 @@
-// @use '../base/animations' as *;
+@use '../abstracts' as *;
 
 .navigation {
 	// height: 10vh;
 
 	&__nav {
 		// background-color: #ffffff;
-		background-color: #d8be63;
+		background-color: $color-primary;
 	}
 
 	&__list {
