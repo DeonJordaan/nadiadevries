@@ -333,14 +333,14 @@ body {
   color: #d8be63;
 }
 .content__coaching {
-  background-color: #d8be63;
+  background-color: #fafad2;
   padding: 5rem 0;
 }
 .content__about {
   padding: 5rem 0;
 }
 .content__faq {
-  background-color: #d8be63;
+  background-color: #fafad2;
   padding: 5rem 0;
 }
 .content__contact {
@@ -426,7 +426,7 @@ h4 {
 footer {
   font-size: 1.25rem;
   color: rgb(89, 88, 88);
-  background-color: #d8be63;
+  background-color: #fafad2;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -453,7 +453,7 @@ footer {
 }
 
 .header__primary {
-  background-color: #d8be63;
+  background-color: #fafad2;
   color: black;
   display: flex;
   flex-direction: column;
@@ -474,7 +474,7 @@ footer {
 }
 
 .navigation__nav {
-  background-color: #d8be63;
+  background-color: #fafad2;
 }
 .navigation__list {
   display: flex;

@@ -1,8 +1,9 @@
+@use '../abstracts' as *;
+
 footer {
 	font-size: 1.25rem;
 	color: rgb(89, 88, 88);
-	// background-color: #e5bd2b;
-	background-color: #d8be63;
+	background-color: $color-ice-gold;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
