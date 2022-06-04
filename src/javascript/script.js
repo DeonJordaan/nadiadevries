@@ -9,12 +9,12 @@ document.addEventListener(
 
 function navAnimation() {
 	// const headerName = document.querySelector('.header__name');
-	const headerTitle = document.querySelector('.header__title');
+	const introTitle = document.querySelector('.intro__heading--title');
 	const scrollLabel = document.querySelector('.intro__scroll');
 	const navItems = document.querySelectorAll('.navigation__item');
 	// const welcomeSection = document.querySelector('welcome-section');
 	// headerName.classList.add('appear');
-	headerTitle.classList.add('appear');
+	introTitle.classList.add('appear');
 	scrollLabel.classList.add('appear');
 	navItems.forEach((item) => item.classList.add('appear'));
 	// welcomeSection.classList.add('appear	');

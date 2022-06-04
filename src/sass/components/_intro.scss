@@ -2,21 +2,23 @@
 
 .intro {
 	position: relative;
+	// padding: 2rem;
 
 	&__script {
-		color: white;
-		text-shadow: $text-shadow;
+		// color: white;
+		color: $color-primary;
+		// text-shadow: $text-shadow;
 		background-image: linear-gradient(
 				to bottom,
-				rgba(0, 0, 0, 0.25),
-				rgba(0, 0, 0, 0.25)
+				rgba(0, 0, 0, 0.35),
+				rgba(0, 0, 0, 0.35)
 			),
 			url('../assets/woman_on_grass.jpg');
 		background-position: right 0 top -15rem;
 		background-size: cover;
 		box-shadow: 0 12px 12px hsla(0deg, 0%, 0%, 0.35);
 		overflow: hidden;
-		height: 75vh;
+		height: 100vh;
 		display: flex;
 		flex-direction: column;
 		text-align: center;
@@ -24,6 +26,7 @@
 	}
 
 	&__scroll {
+		// color: $color-primary-dark;
 		position: absolute;
 		bottom: 5rem;
 		right: 3rem;
@@ -47,8 +50,8 @@
 		}
 
 		&--label {
-			width: 2.5rem;
-			height: 2.5rem;
+			width: 5rem;
+			height: 5rem;
 			margin-left: 1rem;
 		}
 	}
@@ -57,14 +60,40 @@
 		transition: all ease-out 1s;
 	}
 
+	&__heading {
+		display: flex;
+		flex-direction: column;
+		transform: translate(-45rem, -20rem);
+
+		&--name {
+			font-size: 10rem;
+			font-family: $font-special;
+			font-weight: 600;
+			line-height: 1;
+			// color: $color-primary-dark;
+		}
+
+		&--title {
+			font-size: 4rem;
+			font-family: $font-default;
+			font-weight: 500;
+			// transform: translate(-49rem, -20rem);
+			// color: $color-primary-dark;
+		}
+	}
+
 	&__stmnt {
 		font-size: 5rem;
-		transform: translate(-15rem, -15rem);
+		font-weight: 500;
+		transform: translate(-20rem, 20rem);
+		// color: $color-primary-dark;
 	}
 
 	&__question {
 		font-size: 5rem;
-		transform: translate(15rem, -15rem);
+		font-weight: 500;
+		transform: translate(15rem, 18rem);
+		// color: $color-primary-dark;
 	}
 }
 

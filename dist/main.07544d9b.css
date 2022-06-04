@@ -136,6 +136,15 @@ h2 {
   font-weight: 300;
 }
 
+h3 {
+  color: #ecd686;
+  text-shadow: #333 1px 1px;
+}
+
+h4 {
+  color: #999;
+}
+
 main {
   /* make sure to cover the screen */
   min-height: 100vh;
@@ -258,14 +267,13 @@ body {
   position: relative;
 }
 .intro__script {
-  color: white;
-  text-shadow: #999 2px 2px;
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("/woman_on_grass.ee5619df.jpg");
+  color: #ecd686;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url("/woman_on_grass.ee5619df.jpg");
   background-position: right 0 top -15rem;
   background-size: cover;
   box-shadow: 0 12px 12px hsla(0deg, 0%, 0%, 0.35);
   overflow: hidden;
-  height: 75vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -287,20 +295,38 @@ body {
   vertical-align: middle;
 }
 .intro__scroll--label {
-  width: 2.5rem;
-  height: 2.5rem;
+  width: 5rem;
+  height: 5rem;
   margin-left: 1rem;
 }
 .intro__scroll svg {
   transition: all ease-out 1s;
 }
+.intro__heading {
+  display: flex;
+  flex-direction: column;
+  transform: translate(-45rem, -20rem);
+}
+.intro__heading--name {
+  font-size: 10rem;
+  font-family: "Alex Brush", cursive;
+  font-weight: 600;
+  line-height: 1;
+}
+.intro__heading--title {
+  font-size: 4rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+}
 .intro__stmnt {
   font-size: 5rem;
-  transform: translate(-15rem, -15rem);
+  font-weight: 500;
+  transform: translate(-20rem, 20rem);
 }
 .intro__question {
   font-size: 5rem;
-  transform: translate(15rem, -15rem);
+  font-weight: 500;
+  transform: translate(15rem, 18rem);
 }
 
 .fade {
@@ -321,26 +347,28 @@ body {
 }
 .content__heading {
   font-family: "Alex Brush", cursive;
-  color: #d8be63;
-  text-shadow: #999 2px 2px;
-  font-size: 6rem;
+  color: #ecd686;
+  text-shadow: #333 1px 1px;
+  font-size: 8rem;
+  font-weight: 700;
 }
 .content__health {
   display: flex;
   flex-direction: row;
 }
 .content__healthy {
-  color: #d8be63;
+  color: #ecd686;
+  text-shadow: #333 1px 1px;
 }
 .content__coaching {
-  background-color: #fafad2;
+  background-color: #fafa9d;
   padding: 5rem 0;
 }
 .content__about {
   padding: 5rem 0;
 }
 .content__faq {
-  background-color: #fafad2;
+  background-color: #fafa9d;
   padding: 5rem 0;
 }
 .content__contact {
@@ -376,7 +404,7 @@ textarea {
 input:focus,
 textarea:focus {
   background-color: #eed990;
-  border-bottom: 3px solid #d8be63;
+  border-bottom: 3px solid #ecd686;
 }
 
 label {
@@ -385,7 +413,7 @@ label {
 
 button {
   font-size: 1.5rem;
-  background-color: #d8be63;
+  background-color: #ecd686;
   border: 1px solid #999;
   border-radius: 5px;
   padding: 0.5rem 2rem;
@@ -426,7 +454,7 @@ h4 {
 footer {
   font-size: 1.25rem;
   color: rgb(89, 88, 88);
-  background-color: #fafad2;
+  background-color: #fafa9d;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -453,8 +481,7 @@ footer {
 }
 
 .header__primary {
-  background-color: #fafad2;
-  color: black;
+  background-color: #fafa9d;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -474,24 +501,29 @@ footer {
 }
 
 a:visited {
-  color: black;
+  color: #ecd686;
 }
 
 .navigation__nav {
-  background-color: #fafad2;
+  position: absolute;
+  top: 5rem;
+  right: 5rem;
+  background-color: transparent;
 }
 .navigation__list {
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: baseline;
-  color: lightgray;
-  padding: 1.5rem 0 0.5rem 0;
+  flex-direction: column;
   font-size: 1.8rem;
   transition: transform 2s ease-out;
 }
 .navigation__item {
+  color: #ecd686;
+  background-color: transparent;
   opacity: 0;
+  border-radius: 3px;
+  font-size: 3rem;
+  font-weight: 500;
+  text-align: right;
 }
 
 .navigation__list li:hover {
@@ -507,7 +539,7 @@ ul {
 }
 
 a:link {
-  color: black;
+  color: #ecd686;
   text-decoration: none;
 }
 

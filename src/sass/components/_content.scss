@@ -12,7 +12,8 @@
 		font-family: $font-special;
 		color: $color-primary;
 		text-shadow: $text-shadow;
-		font-size: 6rem;
+		font-size: 8rem;
+		font-weight: 700;
 	}
 
 	&__health {
@@ -31,6 +32,7 @@
 
 	&__healthy {
 		color: $color-primary;
+		text-shadow: $text-shadow;
 	}
 
 	&__coaching {

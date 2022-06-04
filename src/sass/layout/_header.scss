@@ -3,7 +3,7 @@
 .header {
 	&__primary {
 		background-color: $color-ice-gold;
-		color: black;
+		// color: black;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
@@ -26,5 +26,5 @@
 }
 
 a:visited {
-	color: black;
+	color: $color-primary;
 }

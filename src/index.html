@@ -5,18 +5,19 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
 
-		<link
-			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400&display=swap"
-			rel="stylesheet"
-		/>
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
 			href="https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap"
 			rel="stylesheet"
 		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
 
 		<link rel="stylesheet" href="./sass/main.scss" />
 		<link
@@ -31,7 +32,7 @@
 	</head>
 	<body id="main" class="container">
 		<header>
-			<span class="header__primary">
+			<!-- <span class="header__primary">
 				<h1 class="header__name">
 					<a href="#" class="navigation__link">Nadia de Vries</a>
 				</h1>
@@ -58,22 +59,46 @@
 						<a href="#faq" class="navigation__link">FAQ</a>
 					</li>
 				</ul>
-			</nav>
+			</nav> -->
 		</header>
 
 		<main>
 			<section class="intro">
 				<div class="intro__script">
-					<!-- <div class="intro__script" style="background-image:url('./assets/birger-strahl-aIlhidvu2ko-unsplash.jpg')""> -->
+					<div class="intro__heading">
+						<span class="intro__heading--name"><a href="#" class="navigation__link">Nadia de Vries</a></span>
+						<span class="intro__heading--title">Health Coach</span>
+					</div>
 					<span class="intro__stmnt"
-						>Everyone wants to be healthy,</span
+						>Everyone wants to be healthy—</span
 					>
 					<span class="intro__question"
 						>but what does 'healthy' even mean?</span
 					>
+					<nav class="navigation__nav">
+						<ul class="navigation__list">
+							<li class="navigation__item">
+								<a href="#coaching" class="navigation__link">Coaching</a>
+							</li>
+							<!-- <li class="navigation__item">
+								<a href="#health" class="navigation__link">Health</a>
+							</li> -->
+							<li class="navigation__item">
+								<a href="#about" class="navigation__link">About me</a>
+							</li>
+							<li class="navigation__item">
+								<a href="#contact" class="navigation__link"
+									>Get in touch</a
+								>
+							</li>
+							<li class="navigation__item">
+								<a href="#faq" class="navigation__link">FAQ</a>
+							</li>
+						</ul>
+					</nav> 
 					<div class="intro__scroll">
-						<span class="intro__scroll--text">Scroll</span> 
-						<svg class="intro__scroll--label" xmlns="http://www.w3.org/2000/svg" width="192" height="192" fill="#d8be63" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><path d="M229.7,141.7l-96,96a8.1,8.1,0,0,1-11.4,0l-96-96a8.4,8.4,0,0,1-1.7-8.8A8,8,0,0,1,32,128H72V104a8,8,0,0,1,8-8h96a8,8,0,0,1,8,8v24h40a8,8,0,0,1,7.4,4.9A8.4,8.4,0,0,1,229.7,141.7ZM184,40a8,8,0,0,0-8-8H80a8,8,0,0,0,0,16h96A8,8,0,0,0,184,40Zm0,32a8,8,0,0,0-8-8H80a8,8,0,0,0,0,16h96A8,8,0,0,0,184,72Z"></path></svg> 
+						<!-- <span class="intro__scroll--text">Scroll</span>  -->
+						<svg class="intro__scroll--label" xmlns="http://www.w3.org/2000/svg" width="192" height="192" fill="#d8be63" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><path d="M128,24A104,104,0,1,0,232,128,104.2,104.2,0,0,0,128,24Zm39.6,115.7-33.9,34a8.2,8.2,0,0,1-11.4,0l-33.9-34a8,8,0,0,1,11.3-11.3L120,148.7V88a8,8,0,0,1,16,0v60.7l20.3-20.3a8,8,0,0,1,11.3,11.3Z"></path></> 
 					</div>
 				</div>
 			</section>
@@ -86,7 +111,7 @@
 				/> -->
 				<div class="content__health--text text-block">
 					<div class="content__heading">
-						<h2>Becoming Healthy...</h2>
+						<span>Becoming Healthy...</span>
 					</div>
 					<h3>Where we begin</h3>
 					<p>
@@ -110,7 +135,7 @@
 					</p>
 					<p>
 						This is where I can be your guide, by acting as an agent
-						of long-term behaviour change.
+						of long-term behavioural change.
 					</p>
 					<p>
 						You can nourish your health. But nourishment does not

@@ -138,12 +138,12 @@ document.addEventListener('DOMContentLoaded', setTimeout(function () {
 
 function navAnimation() {
   // const headerName = document.querySelector('.header__name');
-  var headerTitle = document.querySelector('.header__title');
+  var introTitle = document.querySelector('.intro__heading--title');
   var scrollLabel = document.querySelector('.intro__scroll');
   var navItems = document.querySelectorAll('.navigation__item'); // const welcomeSection = document.querySelector('welcome-section');
   // headerName.classList.add('appear');
 
-  headerTitle.classList.add('appear');
+  introTitle.classList.add('appear');
   scrollLabel.classList.add('appear');
   navItems.forEach(function (item) {
     return item.classList.add('appear');
