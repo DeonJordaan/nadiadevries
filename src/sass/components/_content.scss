@@ -4,7 +4,7 @@
 	position: relative;
 	display: flex;
 	flex-direction: column;
-	padding: 5rem 0 10rem 0;
+	padding: 5rem 10rem 10rem 10rem;
 	font-size: 1.7rem;
 	// width: 100%;
 
@@ -35,18 +35,18 @@
 
 	&__coaching {
 		background-color: $color-ice-gold;
-		padding: 5rem 0;
+		padding: $content-padding;
 		// padding: 5rem;
 	}
 
 	&__about {
-		padding: 5rem 0;
+		padding: $content-padding;
 		// padding: 5rem;
 	}
 
 	&__faq {
 		background-color: $color-ice-gold;
-		padding: 5rem 0;
+		padding: $content-padding;
 		// padding: 5rem;
 	}
 
@@ -55,7 +55,7 @@
 		// padding: 5rem;
 		display: flex;
 		justify-content: center;
-		padding: 5rem 0;
+		padding: $content-padding;
 		// width: 80vw;
 		// align-items: center;
 

@@ -316,7 +316,7 @@ body {
   position: relative;
   display: flex;
   flex-direction: column;
-  padding: 5rem 0 10rem 0;
+  padding: 5rem 10rem 10rem 10rem;
   font-size: 1.7rem;
 }
 .content__heading {
@@ -473,6 +473,10 @@ footer {
   line-height: 1.25;
 }
 
+a:visited {
+  color: black;
+}
+
 .navigation__nav {
   background-color: #fafad2;
 }
@@ -492,10 +496,6 @@ footer {
 
 .navigation__list li:hover {
   transform: scale(1.05);
-}
-
-.navigation__list li:visited {
-  color: black;
 }
 
 .navigation__list li:active {
