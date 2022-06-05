@@ -1,37 +1,32 @@
 @use '../abstracts' as *;
 
 footer {
-	font-size: 1.25rem;
-	color: rgb(89, 88, 88);
-	background-color: $color-ice-gold;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
+	padding: 0 10rem;
 	position: sticky;
 	bottom: 0;
 	left: 0;
-	// width: 100%;
-	height: auto;
-	// height: 70px;
-	// justify-content: center;
-	padding: 1.75rem 3rem;
 }
 
 .footer__logo {
-	// position: absolute;
 	width: 100px;
 	height: 100px;
-	// bottom: 1.5rem;
-	// left: 1.5rem;
 }
 
-// .footer-stuff {
-// 	max-width: 640px;
-// 	// margin: 0 auto;
-// 	// text-align: center;
-// }
-
 .footer {
+	&__content {
+		font-size: 1.25rem;
+		color: rgb(89, 88, 88);
+		background-color: $color-background;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		// width: 100%;
+		height: auto;
+		// height: 70px;
+		// justify-content: center;
+		padding: 1.75rem 3rem;
+	}
 	&__details {
 		font-size: 1.5rem;
 		// padding: 3rem 0 0 0;
@@ -44,5 +39,10 @@ footer {
 
 	&__item {
 		padding: 0 1rem;
+	}
+
+	a:link,
+	a:visited {
+		color: $color-black;
 	}
 }

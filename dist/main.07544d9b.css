@@ -361,18 +361,19 @@ body {
   text-shadow: #333 1px 1px;
 }
 .content__coaching {
-  background-color: #fafa9d;
+  background-color: #fbf4da;
   padding: 5rem 0;
 }
 .content__about {
   padding: 5rem 0;
 }
 .content__faq {
-  background-color: #fafa9d;
+  background-color: #fbf4da;
   padding: 5rem 0;
 }
 .content__contact {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   padding: 5rem 0;
 }
@@ -383,6 +384,7 @@ body {
 
 form {
   width: 50vw;
+  margin: auto;
   background-color: #f7f7f7;
   border: #eee;
 }
@@ -447,22 +449,19 @@ button:focus {
   width: max-content;
 }
 
+h3 {
+  padding-left: 2rem;
+}
+
 h4 {
   padding-top: 2rem;
 }
 
 footer {
-  font-size: 1.25rem;
-  color: rgb(89, 88, 88);
-  background-color: #fafa9d;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  padding: 0 10rem;
   position: sticky;
   bottom: 0;
   left: 0;
-  height: auto;
-  padding: 1.75rem 3rem;
 }
 
 .footer__logo {
@@ -470,6 +469,16 @@ footer {
   height: 100px;
 }
 
+.footer__content {
+  font-size: 1.25rem;
+  color: rgb(89, 88, 88);
+  background-color: #fbf4da;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: auto;
+  padding: 1.75rem 3rem;
+}
 .footer__details {
   font-size: 1.5rem;
   width: 100%;
@@ -478,6 +487,10 @@ footer {
 }
 .footer__item {
   padding: 0 1rem;
+}
+.footer a:link,
+.footer a:visited {
+  color: #000;
 }
 
 .header__primary {
@@ -517,21 +530,45 @@ a:visited {
   transition: transform 2s ease-out;
 }
 .navigation__item {
+  position: relative;
   color: #ecd686;
   background-color: transparent;
   opacity: 0;
+  padding: 0 2rem;
   border-radius: 3px;
   font-size: 3rem;
   font-weight: 500;
   text-align: right;
+  transition: all 0.25s ease-out;
 }
-
-.navigation__list li:hover {
-  transform: scale(1.05);
+.navigation__item:not(:last-child) {
+  margin-bottom: 1rem;
 }
-
-.navigation__list li:active {
-  border: 0.1px solid black;
+.navigation__item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 3px;
+  background-color: #ecd686;
+  transform: scaleY(0);
+  transition: transform 0.3s, width 0.4s ease-out 0.2s;
+}
+.navigation__item:hover::before {
+  transform: scaleY(1);
+  width: 100%;
+}
+.navigation__link:link, .navigation__link:visited {
+  color: #ecd686;
+  text-decoration: none;
+  display: block;
+  position: relative;
+  z-index: 10;
+  transition: color 0.1s 0.2s;
+}
+.navigation__link:hover {
+  color: #777;
 }
 
 ul {
@@ -539,7 +576,6 @@ ul {
 }
 
 a:link {
-  color: #ecd686;
   text-decoration: none;
 }
 

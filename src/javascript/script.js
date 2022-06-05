@@ -22,7 +22,7 @@ function navAnimation() {
 
 // Intersection Observer to fade out scroll label
 function scrollLabelFade() {
-	const headerSection = document.querySelector('.header__name');
+	const headerSection = document.querySelector('.intro__heading');
 	const scrollLabel = document.querySelectorAll('.intro__scroll');
 
 	const observerCallback = (entries) => {

@@ -152,7 +152,7 @@ function navAnimation() {
 
 
 function scrollLabelFade() {
-  var headerSection = document.querySelector('.header__name');
+  var headerSection = document.querySelector('.intro__heading');
   var scrollLabel = document.querySelectorAll('.intro__scroll');
 
   var observerCallback = function observerCallback(entries) {
@@ -207,7 +207,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "64002" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50892" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
