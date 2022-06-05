@@ -4,13 +4,12 @@
 	position: relative;
 	display: flex;
 	flex-direction: column;
-	padding: 5rem 10rem 10rem 10rem;
+	padding: 5rem 15rem 10rem 15rem;
 	font-size: 1.7rem;
-	// width: 100%;
 
 	&__heading {
 		font-family: $font-special;
-		color: $color-primary;
+		color: $color-primary-dark;
 		text-shadow: $text-shadow;
 		font-size: 8rem;
 		font-weight: 700;
@@ -19,15 +18,6 @@
 	&__health {
 		display: flex;
 		flex-direction: row;
-		// padding: 5rem;
-		// align-content: flex-end;
-		// margin-left: auto;
-
-		// &--image {
-		// 	width: 50%;
-		// 	border-radius: 10px;
-		// 	padding: 10rem;
-		// }
 	}
 
 	&__healthy {
@@ -38,89 +28,31 @@
 	&__coaching {
 		background-color: $color-background;
 		padding: $content-padding;
-		// padding: 5rem;
+		border-radius: 15px;
 	}
 
 	&__about {
 		padding: $content-padding;
-		// padding: 5rem;
 	}
 
 	&__faq {
 		background-color: $color-background;
 		padding: $content-padding;
-		// padding: 5rem;
+		border-radius: 15px;
 	}
 
 	&__contact {
-		// margin: 5rem 0;
-		// padding: 5rem;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		padding: $content-padding;
-		// width: 80vw;
-		// align-items: center;
-
-		// position: relative;
-		// padding: 12rem 0;
-		// max-width: 120rem;
 
 		&--heading {
 			width: 100%;
 			// text-align: center;
 			padding-bottom: 2rem;
 		}
-
-		// 	&--details {
-		// 		font-size: 1.5rem;
-		// 		padding: 3rem 0 0 0;
-		// 		width: 100%;
-		// 		display: flex;
-		// 		flex-direction: column;
-		// 		text-align: center;
-		// 	}
-		// 	&--item {
-		// 		line-height: 1.6;
-		// 	}
 	}
-}
-
-form {
-	width: 50vw;
-	margin: auto;
-	background-color: $color-grey-light-1;
-	border: $color-grey-light-2;
-}
-
-input,
-textarea {
-	all: unset;
-}
-
-input,
-textarea {
-	width: 100%;
-	padding: 12px 20px;
-	border: 1px solid #ccc;
-	border-radius: 4px;
-	resize: none;
-	font-size: 1.4rem;
-
-	&:focus {
-		background-color: $color-primary-light;
-		border-bottom: 3px solid $color-primary;
-	}
-}
-
-// input:focus,
-// textarea:focus {
-// 	border: 1px solid $color-primary;
-// }
-
-label {
-	font-size: 1.4rem;
-	// display: inline-block;
 }
 
 button {
@@ -143,8 +75,6 @@ button:focus {
 }
 
 .text-block {
-	// display: flex;
-	// flex-direction: column;
 	padding: 2rem 20rem;
 }
 
@@ -156,13 +86,13 @@ button:focus {
 .quote {
 	padding: 1rem;
 	margin: 1rem 2rem;
-	background-color: lightgray;
+	background-color: $color-tertiary;
 	border-radius: 5px;
 	width: max-content;
 }
 
 h3 {
-	padding-left: 2rem;
+	padding-left: 4rem;
 }
 
 h4 {

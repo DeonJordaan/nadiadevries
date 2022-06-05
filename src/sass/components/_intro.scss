@@ -2,16 +2,13 @@
 
 .intro {
 	position: relative;
-	// padding: 2rem;
 
-	&__script {
-		// color: white;
+	&__view {
 		color: $color-primary;
-		// text-shadow: $text-shadow;
 		background-image: linear-gradient(
 				to bottom,
-				rgba(0, 0, 0, 0.35),
-				rgba(0, 0, 0, 0.35)
+				rgba(0, 0, 0, 0.3),
+				rgba(0, 0, 0, 0.3)
 			),
 			url('../assets/woman_on_grass.jpg');
 		background-position: right 0 top -15rem;
@@ -26,28 +23,25 @@
 	}
 
 	&__scroll {
-		// color: $color-primary-dark;
 		position: absolute;
 		bottom: 5rem;
 		right: 3rem;
-		display: flex;
-		flex-direction: row;
-		font-size: 1.75rem;
-		font-weight: 400;
-		opacity: 0;
-		transition: all ease-out 1s;
 		// display: flex;
 		// flex-direction: row;
+		// font-size: 1.75rem;
+		// font-weight: 400;
+		opacity: 0;
+		transition: all ease-out 1s;
 
 		// @include respond(phone) {
 		// 	display: none;
 		// }
 
-		&--text,
-		&--label {
-			display: inline-block;
-			vertical-align: middle;
-		}
+		// &--text,
+		// &--label {
+		// 	display: inline-block;
+		// 	vertical-align: middle;
+		// }
 
 		&--label {
 			width: 5rem;
@@ -70,7 +64,12 @@
 			font-family: $font-special;
 			font-weight: 600;
 			line-height: 1;
-			// color: $color-primary-dark;
+			color: $color-primary-dark;
+		}
+
+		&--name a:link,
+		&--name a:visited {
+			color: $color-primary-dark;
 		}
 
 		&--title {
