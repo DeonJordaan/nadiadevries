@@ -10,8 +10,8 @@
 				rgba(0, 0, 0, 0.3),
 				rgba(0, 0, 0, 0.3)
 			),
-			url('../assets/woman_on_grass.jpg');
-		background-position: right 0 top -15rem;
+			url('../assets/hero-desktop-sml-2.jpg');
+		background-position: center;
 		background-size: cover;
 		box-shadow: 0 12px 12px hsla(0deg, 0%, 0%, 0.35);
 		overflow: hidden;
@@ -20,27 +20,44 @@
 		flex-direction: column;
 		text-align: center;
 		justify-content: center;
+		// align-items: center;
+
+		@include respond(big-desktop) {
+			background-image: linear-gradient(
+					to bottom,
+					rgba(0, 0, 0, 0.3),
+					rgba(0, 0, 0, 0.3)
+				),
+				url('../assets/hero-desktop-lrg.jpg');
+			background-position: center;
+			background-size: cover;
+		}
+
+		@include respond(tab-port) {
+			background-image: linear-gradient(
+					to bottom,
+					rgba(0, 0, 0, 0.3),
+					rgba(0, 0, 0, 0.3)
+				),
+				url('../assets/hero-mobile-sml.jpg');
+			background-position: center;
+			background-size: cover;
+		}
+
+		// @include respond(phone) {
+		// 	width: 100vw;
+		// }
 	}
 
 	&__scroll {
 		position: absolute;
 		bottom: 5rem;
 		right: 3rem;
-		// display: flex;
-		// flex-direction: row;
-		// font-size: 1.75rem;
-		// font-weight: 400;
 		opacity: 0;
 		transition: all ease-out 1s;
 
 		// @include respond(phone) {
 		// 	display: none;
-		// }
-
-		// &--text,
-		// &--label {
-		// 	display: inline-block;
-		// 	vertical-align: middle;
 		// }
 
 		&--label {
@@ -54,53 +71,53 @@
 		transition: all ease-out 1s;
 	}
 
-	&__heading {
-		display: flex;
-		flex-direction: column;
-		transform: translate(-45rem, -20rem);
-
-		&--name {
-			font-size: 10rem;
-			font-family: $font-special;
-			font-weight: 600;
-			line-height: 1;
-			color: $color-primary-dark;
-		}
-
-		&--name a:link,
-		&--name a:visited {
-			color: $color-primary-dark;
-		}
-
-		&--title {
-			font-size: 4rem;
-			font-family: $font-default;
-			font-weight: 500;
-			// transform: translate(-49rem, -20rem);
-			// color: $color-primary-dark;
-		}
-	}
-
 	&__stmnt {
 		font-size: 5rem;
 		font-weight: 500;
-		transform: translate(-20rem, 20rem);
+		transform: translate(0, 23rem);
+		padding: 0 5rem;
+		word-wrap: break-word;
 		// color: $color-primary-dark;
+
+		@include respond(tab-land) {
+			font-size: 4rem;
+			// transform: translate(-15rem, 25rem);
+		}
+
+		@include respond(tab-port) {
+			font-size: 3.5rem;
+			// transform: translate(-9rem, 25rem);
+		}
+
+		@include respond(phone) {
+			font-size: 3rem;
+			// transform: translate(0, 20rem);
+		}
 	}
 
 	&__question {
 		font-size: 5rem;
 		font-weight: 500;
-		transform: translate(15rem, 18rem);
-		// color: $color-primary-dark;
+		transform: translate(0, 23rem);
+		padding: 0 5rem;
+		word-wrap: break-word;
+
+		@include respond(tab-land) {
+			font-size: 4rem;
+		}
+
+		@include respond(tab-port) {
+			font-size: 3.5rem;
+			// transform: translate(5rem, 23rem);
+		}
+
+		@include respond(phone) {
+			font-size: 3rem;
+			// transform: translate(0, 20rem);
+		}
 	}
 }
 
-.fade {
-	color: transparent;
-	text-shadow: none;
-}
-
-.fade svg {
-	opacity: 0;
+.shift {
+	transform: translateX(10rem);
 }

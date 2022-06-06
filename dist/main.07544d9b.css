@@ -35,19 +35,26 @@ ORDER OF APPLYING MEDIA QUERIES: Base + Typography > General Layout + Grid > Pag
 }
 html {
   font-size: 62.5%;
-  /*
-  @include respond(tab-land) {
-  	font-size: 56.25%; //1rem = 9px, 9 / 16 = 56.25%
+}
+@media only screen and (max-width: 37.5em) {
+  html {
+    font-size: 50%;
   }
-
-  @include respond(tab-port) {
-  	font-size: 50%; //1rem = 8px, 8 / 16 = 50%
+}
+@media only screen and (max-width: 75em) {
+  html {
+    font-size: 56.25%;
   }
-
-  @include respond(big-desktop) {
-  	font-size: 75%; //1rem = 12px, 12 / 16 = 75%
+}
+@media only screen and (max-width: 56.25em) {
+  html {
+    font-size: 50%;
   }
-     */
+}
+@media only screen and (min-width: 112.5em) {
+  html {
+    font-size: 75%;
+  }
 }
 
 /*
@@ -160,116 +167,13 @@ body {
   line-height: 1.7;
 }
 
-.heading-primary {
-  color: #fff;
-  text-transform: uppercase;
-  backface-visibility: hidden;
-  margin-bottom: 6rem;
-}
-.heading-primary__main {
-  font-size: 4rem;
-}
-@media only screen and (max-width: 75em) {
-  .heading-primary__main {
-    font-size: 3rem;
-  }
-}
-@media only screen and (max-width: 56.25em) {
-  .heading-primary__main {
-    font-size: 2.5rem;
-  }
-}
-@media only screen and (max-width: 37.5em) {
-  .heading-primary__main {
-    font-size: 2.25rem;
-  }
-}
-@media only screen and (max-width: 25em) {
-  .heading-primary__main {
-    font-size: 2rem;
-  }
-}
-.heading-primary__sub {
-  font-size: 3rem;
-}
-@media only screen and (max-width: 75em) {
-  .heading-primary__sub {
-    font-size: 2.5rem;
-  }
-}
-@media only screen and (max-width: 56.25em) {
-  .heading-primary__sub {
-    font-size: 2rem;
-  }
-}
-@media only screen and (max-width: 37.5em) {
-  .heading-primary__sub {
-    font-size: 1.8rem;
-  }
-}
-@media only screen and (max-width: 25em) {
-  .heading-primary__sub {
-    font-size: 1.5rem;
-  }
-}
-.heading-primary__text {
-  font-size: 1.5rem;
-  font-weight: 300;
-}
-@media only screen and (max-width: 75em) {
-  .heading-primary__text {
-    font-size: 1.5rem;
-  }
-}
-@media only screen and (max-width: 56.25em) {
-  .heading-primary__text {
-    font-size: 1.3rem;
-  }
-}
-@media only screen and (max-width: 37.5em) {
-  .heading-primary__text {
-    font-size: 1.5rem;
-  }
-}
-@media only screen and (max-width: 25em) {
-  .heading-primary__text {
-    font-size: 1.2rem;
-  }
-}
-.heading-primary__desc {
-  font-size: 1.5rem;
-  font-weight: 300;
-  margin-bottom: 1.5rem;
-  display: inline-block;
-}
-@media only screen and (max-width: 75em) {
-  .heading-primary__desc {
-    font-size: 1.5rem;
-  }
-}
-@media only screen and (max-width: 56.25em) {
-  .heading-primary__desc {
-    font-size: 1.3rem;
-  }
-}
-@media only screen and (max-width: 37.5em) {
-  .heading-primary__desc {
-    font-size: 1.5rem;
-  }
-}
-@media only screen and (max-width: 25em) {
-  .heading-primary__desc {
-    font-size: 1.2rem;
-  }
-}
-
 .intro {
   position: relative;
 }
 .intro__view {
   color: #c7d36f;
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/woman_on_grass.ee5619df.jpg");
-  background-position: right 0 top -15rem;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/hero-desktop-sml-2.05ec918a.jpg");
+  background-position: center;
   background-size: cover;
   box-shadow: 0 12px 12px hsla(0deg, 0%, 0%, 0.35);
   overflow: hidden;
@@ -278,6 +182,20 @@ body {
   flex-direction: column;
   text-align: center;
   justify-content: center;
+}
+@media only screen and (min-width: 112.5em) {
+  .intro__view {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/hero-desktop-lrg.77631a9c.jpg");
+    background-position: center;
+    background-size: cover;
+  }
+}
+@media only screen and (max-width: 56.25em) {
+  .intro__view {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/hero-mobile-sml.ccb7c6d4.jpg");
+    background-position: center;
+    background-size: cover;
+  }
 }
 .intro__scroll {
   position: absolute;
@@ -294,44 +212,53 @@ body {
 .intro__scroll svg {
   transition: all ease-out 1s;
 }
-.intro__heading {
-  display: flex;
-  flex-direction: column;
-  transform: translate(-45rem, -20rem);
-}
-.intro__heading--name {
-  font-size: 10rem;
-  font-family: "Alex Brush", cursive;
-  font-weight: 600;
-  line-height: 1;
-  color: #9eb23b;
-}
-.intro__heading--name a:link, .intro__heading--name a:visited {
-  color: #9eb23b;
-}
-.intro__heading--title {
-  font-size: 4rem;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 500;
-}
 .intro__stmnt {
   font-size: 5rem;
   font-weight: 500;
-  transform: translate(-20rem, 20rem);
+  transform: translate(0, 23rem);
+  padding: 0 5rem;
+  word-wrap: break-word;
+}
+@media only screen and (max-width: 75em) {
+  .intro__stmnt {
+    font-size: 4rem;
+  }
+}
+@media only screen and (max-width: 56.25em) {
+  .intro__stmnt {
+    font-size: 3.5rem;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .intro__stmnt {
+    font-size: 3rem;
+  }
 }
 .intro__question {
   font-size: 5rem;
   font-weight: 500;
-  transform: translate(15rem, 18rem);
+  transform: translate(0, 23rem);
+  padding: 0 5rem;
+  word-wrap: break-word;
+}
+@media only screen and (max-width: 75em) {
+  .intro__question {
+    font-size: 4rem;
+  }
+}
+@media only screen and (max-width: 56.25em) {
+  .intro__question {
+    font-size: 3.5rem;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .intro__question {
+    font-size: 3rem;
+  }
 }
 
-.fade {
-  color: transparent;
-  text-shadow: none;
-}
-
-.fade svg {
-  opacity: 0;
+.shift {
+  transform: translateX(10rem);
 }
 
 .content {
@@ -339,7 +266,22 @@ body {
   display: flex;
   flex-direction: column;
   padding: 5rem 15rem 10rem 15rem;
-  font-size: 1.7rem;
+  font-size: 1.6rem;
+}
+@media only screen and (max-width: 75em) {
+  .content {
+    padding: 5rem 12rem 8rem 12rem;
+  }
+}
+@media only screen and (max-width: 56.25em) {
+  .content {
+    padding: 4rem 10rem 6rem 10rem;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .content {
+    padding: 4rem 2rem;
+  }
 }
 .content__heading {
   font-family: "Alex Brush", cursive;
@@ -348,8 +290,19 @@ body {
   font-size: 8rem;
   font-weight: 700;
 }
+@media only screen and (max-width: 75em) {
+  .content__heading {
+    font-size: 6rem;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .content__heading {
+    font-size: 4rem;
+  }
+}
 .content__health {
   display: flex;
+  padding: 5rem 0;
   flex-direction: row;
 }
 .content__healthy {
@@ -357,7 +310,7 @@ body {
   text-shadow: #333 1px 1px;
 }
 .content__coaching {
-  background-color: #fcf9c6;
+  background-color: #e0deca;
   padding: 5rem 0;
   border-radius: 15px;
 }
@@ -365,7 +318,7 @@ body {
   padding: 5rem 0;
 }
 .content__faq {
-  background-color: #fcf9c6;
+  background-color: #e0deca;
   padding: 5rem 0;
   border-radius: 15px;
 }
@@ -402,6 +355,21 @@ button:focus {
 .text-block {
   padding: 2rem 20rem;
 }
+@media only screen and (max-width: 75em) {
+  .text-block {
+    padding: 2rem 15rem;
+  }
+}
+@media only screen and (max-width: 56.25em) {
+  .text-block {
+    padding: 2rem 10rem;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .text-block {
+    padding: 2rem 4rem;
+  }
+}
 
 .appear {
   animation: appear 3s ease-out 1s;
@@ -413,7 +381,6 @@ button:focus {
   margin: 1rem 2rem;
   background-color: #e0deca;
   border-radius: 5px;
-  width: max-content;
 }
 
 h3 {
@@ -427,7 +394,11 @@ h4 {
 .form__group {
   width: 40vw;
   margin: auto;
-  border: #eee;
+}
+@media only screen and (max-width: 37.5em) {
+  .form__group {
+    width: 70vw;
+  }
 }
 .form__group:not(:last-child) {
   margin-bottom: 2rem;
@@ -458,7 +429,7 @@ h4 {
 }
 .form__label {
   color: #9eb23b;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   font-weight: 700;
   margin-left: 2rem;
   margin-top: 0.7rem;
@@ -474,22 +445,39 @@ h4 {
   display: inline;
 }
 
+@media only screen and (max-width: 37.5em) {
+  .btn {
+    width: 100%;
+  }
+}
+
 footer {
   padding: 0 10rem;
   position: sticky;
   bottom: 0;
   left: 0;
 }
+@media only screen and (max-width: 37.5em) {
+  footer {
+    padding: 0 2rem;
+  }
+}
 
 .footer__logo {
   width: 100px;
   height: 100px;
 }
+@media only screen and (max-width: 37.5em) {
+  .footer__logo {
+    width: 60px;
+    height: 60px;
+  }
+}
 
 .footer__content {
   font-size: 1.25rem;
   color: rgb(89, 88, 88);
-  background-color: #fcf9c6;
+  background-color: #e0deca;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -504,6 +492,12 @@ footer {
   text-align: center;
   display: inline;
 }
+@media only screen and (max-width: 37.5em) {
+  .footer__details {
+    display: flex;
+    flex-direction: column;
+  }
+}
 .footer__item {
   padding: 0 1rem;
 }
@@ -512,31 +506,122 @@ footer {
   color: #000;
 }
 
-.navigation__nav {
-  position: absolute;
-  top: 5rem;
-  right: 5rem;
+.header {
+  --primary-flex-direction: column;
+  --header-padding: 3rem;
+  --bg-colour: transparent;
+  --name-font-size: 10rem;
+  --title-font-size: 4rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  background-color: var(--bg-colour);
+  width: 100vw;
+  height: auto;
+  padding: var(--header-padding);
+  z-index: 100;
+  transition: flex-direction 1s, padding 1s, background-color 1s;
+}
+@media only screen and (max-width: 37.5em) {
+  .header {
+    flex-direction: column;
+  }
+}
+.header__primary {
+  display: flex;
+  flex-direction: var(--primary-flex-direction);
+  align-items: center;
+  margin: 0 5rem;
+}
+.header__name {
+  opacity: 1;
+  font-family: "Alex Brush", cursive;
+  font-size: var(--name-font-size);
+  font-weight: 600;
+  line-height: 1;
+  color: #9eb23b;
+  min-width: 100%;
+  transition: font-size 1s;
+}
+@media only screen and (max-width: 75em) {
+  .header__name {
+    --name-font-size: 8rem;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .header__name {
+    --name-font-size: 5rem;
+  }
+}
+.header__name a:link, .header__name a:visited {
+  color: #9eb23b;
+}
+.header__title {
+  opacity: 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: var(--title-font-size);
+  font-weight: 500;
+  color: #9eb23b;
+  text-align: center;
+  min-width: 100%;
+  transition: font-size 1s;
+}
+@media only screen and (max-width: 75em) {
+  .header__title {
+    --title-font-size: 3.5rem;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .header__title {
+    --title-font-size: 2.5rem;
+  }
+}
+
+.minify {
+  --header-padding: 1rem;
+  --bg-colour: #e0deca;
+  --name-font-size: 5rem;
+  --title-font-size: 1.8rem;
+}
+
+.navigation {
+  --list-flex-direction: column;
+  --nav-item-font-size: 2.5rem;
   background-color: transparent;
 }
 .navigation__list {
   display: flex;
-  flex-direction: column;
-  transition: transform 2s ease-out;
+  flex-direction: var(--list-flex-direction);
+  transition: transform 2s ease-out, flex-direction 1s;
 }
 .navigation__item {
   position: relative;
-  color: #c7d36f;
+  color: #9eb23b;
   background-color: transparent;
   opacity: 0;
   padding: 0 2rem;
-  border-radius: 3px;
-  font-size: 3rem;
+  font-size: var(--nav-item-font-size);
   font-weight: 500;
   text-align: right;
-  transition: all 0.25s ease-out;
+  transition: all 0.25s ease-out, font-size 1s;
 }
-.navigation__item:not(:last-child) {
-  margin-bottom: 1rem;
+@media only screen and (max-width: 75em) {
+  .navigation__item {
+    --nav-item-font-size: 1.8rem;
+  }
+}
+@media only screen and (max-width: 56.25em) {
+  .navigation__item {
+    --nav-item-font-size: 1.8rem;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .navigation__item {
+    text-align: center;
+    padding: 0.8rem;
+  }
 }
 .navigation__item::before {
   content: "";
@@ -545,7 +630,7 @@ footer {
   right: 0;
   height: 100%;
   width: 3px;
-  background-color: #c7d36f;
+  background-color: #9eb23b;
   transform: scaleY(0);
   transition: transform 0.3s, width 0.4s ease-out 0.2s;
 }
@@ -554,7 +639,7 @@ footer {
   width: 100%;
 }
 .navigation__link:link, .navigation__link:visited {
-  color: #c7d36f;
+  color: #9eb23b;
   text-decoration: none;
   display: block;
   position: relative;
@@ -567,6 +652,7 @@ footer {
 
 ul {
   list-style: none;
+  padding: 0;
 }
 
 a:link {
@@ -576,6 +662,10 @@ a:link {
 .appear {
   animation: appear 3s ease-out 1s;
   animation-fill-mode: forwards;
+}
+
+.minify {
+  --list-flex-direction: column;
 }
 
 /*# sourceMappingURL=/main.07544d9b.css.map */

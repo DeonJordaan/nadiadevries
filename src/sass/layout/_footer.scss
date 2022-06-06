@@ -5,11 +5,20 @@ footer {
 	position: sticky;
 	bottom: 0;
 	left: 0;
+
+	@include respond(phone) {
+		padding: 0 2rem;
+	}
 }
 
 .footer__logo {
 	width: 100px;
 	height: 100px;
+
+	@include respond(phone) {
+		width: 60px;
+		height: 60px;
+	}
 }
 
 .footer {
@@ -33,10 +42,13 @@ footer {
 		font-size: 1.5rem;
 		// padding: 3rem 0 0 0;
 		width: 100%;
-		// display: flex;
-		// flex-direction: column;
 		text-align: center;
 		display: inline;
+
+		@include respond(phone) {
+			display: flex;
+			flex-direction: column;
+		}
 	}
 
 	&__item {

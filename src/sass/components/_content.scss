@@ -5,7 +5,19 @@
 	display: flex;
 	flex-direction: column;
 	padding: 5rem 15rem 10rem 15rem;
-	font-size: 1.7rem;
+	font-size: 1.6rem;
+
+	@include respond(tab-land) {
+		padding: 5rem 12rem 8rem 12rem;
+	}
+
+	@include respond(tab-port) {
+		padding: 4rem 10rem 6rem 10rem;
+	}
+
+	@include respond(phone) {
+		padding: 4rem 2rem;
+	}
 
 	&__heading {
 		font-family: $font-special;
@@ -13,10 +25,19 @@
 		text-shadow: $text-shadow;
 		font-size: 8rem;
 		font-weight: 700;
+
+		@include respond(tab-land) {
+			font-size: 6rem;
+		}
+
+		@include respond(phone) {
+			font-size: 4rem;
+		}
 	}
 
 	&__health {
 		display: flex;
+		padding: $content-padding;
 		flex-direction: row;
 	}
 
@@ -76,6 +97,18 @@ button:focus {
 
 .text-block {
 	padding: 2rem 20rem;
+
+	@include respond(tab-land) {
+		padding: 2rem 15rem;
+	}
+
+	@include respond(tab-port) {
+		padding: 2rem 10rem;
+	}
+
+	@include respond(phone) {
+		padding: 2rem 4rem;
+	}
 }
 
 .appear {
@@ -86,9 +119,9 @@ button:focus {
 .quote {
 	padding: 1rem;
 	margin: 1rem 2rem;
-	background-color: $color-tertiary;
+	background-color: $color-secondary;
 	border-radius: 5px;
-	width: max-content;
+	// width: max-content;
 }
 
 h3 {

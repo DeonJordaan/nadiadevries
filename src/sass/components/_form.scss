@@ -4,7 +4,10 @@
 	&__group {
 		width: 40vw;
 		margin: auto;
-		border: $color-grey-light-2;
+
+		@include respond(phone) {
+			width: 70vw;
+		}
 	}
 
 	&__group:not(:last-child) {
@@ -41,7 +44,7 @@
 
 	&__label {
 		color: $color-primary-dark;
-		font-size: 1.2rem;
+		font-size: 1.4rem;
 		font-weight: 700;
 		margin-left: 2rem;
 		margin-top: 0.7rem;
@@ -57,5 +60,11 @@
 
 	&__input label {
 		display: inline;
+	}
+}
+
+.btn {
+	@include respond(phone) {
+		width: 100%;
 	}
 }

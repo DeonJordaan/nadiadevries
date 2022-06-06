@@ -1,44 +1,44 @@
 @use '../abstracts' as *;
 
 .navigation {
-	// height: 10vh;
+	--list-flex-direction: column;
+	--nav-item-font-size: 2.5rem;
 
-	&__nav {
-		position: absolute;
-		top: 5rem;
-		right: 5rem;
-		// background-color: #ffffff;
-		background-color: transparent;
-		// background-color: $color-ice-gold;
-	}
+	background-color: transparent;
 
 	&__list {
 		display: flex;
-		flex-direction: column;
-		// justify-content: space-around;
-		// align-items: baseline;
-		// color: #fff;
-		// padding: 1.5rem 0 0.5rem 0;
-		// font-size: 1.8rem;
-		transition: transform 2s ease-out;
+		flex-direction: var(--list-flex-direction);
+		transition: transform 2s ease-out, flex-direction 1s;
 	}
 
 	&__item {
 		position: relative;
-		color: $color-primary;
+		color: $color-primary-dark;
 		background-color: transparent;
 		opacity: 0;
 		padding: 0 2rem;
-		// margin: 0.5rem 0;
-		border-radius: 3px;
-		font-size: 3rem;
+		font-size: var(--nav-item-font-size);
 		font-weight: 500;
 		text-align: right;
-		transition: all 0.25s ease-out;
+		transition: all 0.25s ease-out, font-size 1s;
 
-		&:not(:last-child) {
-			margin-bottom: 1rem;
+		@include respond(tab-land) {
+			--nav-item-font-size: 1.8rem;
 		}
+
+		@include respond(tab-port) {
+			--nav-item-font-size: 1.8rem;
+		}
+
+		@include respond(phone) {
+			text-align: center;
+			padding: 0.8rem;
+		}
+
+		// &:not(:last-child) {
+		// 	margin-bottom: 1rem;
+		// }
 	}
 
 	&__item::before {
@@ -48,7 +48,7 @@
 		right: 0;
 		height: 100%;
 		width: 3px;
-		background-color: $color-primary;
+		background-color: $color-primary-dark;
 		transform: scaleY(0);
 		transition: transform 0.3s, width 0.4s ease-out 0.2s;
 	}
@@ -61,7 +61,7 @@
 
 	&__link:link,
 	&__link:visited {
-		color: $color-primary;
+		color: $color-primary-dark;
 		text-decoration: none;
 		display: block;
 		position: relative;
@@ -74,30 +74,25 @@
 	}
 }
 
-// li:hover {
-// 	// transform: scale(1.05);
-// 	color: $color-grey-dark; // FIXME NOT BEING APPLIED
-// 	// background-color: $color-primary-dark;
-// }
-
-// li:active {
-// 	// transform: scale(1.05);
-// 	border: 0.1px solid black;
-// }
-
 ul {
 	list-style: none;
+	padding: 0;
 }
 
 a:link {
-	// color: $color-primary;
 	text-decoration: none;
 }
-
-// a:hover {
-// }
 
 .appear {
 	animation: appear 3s ease-out 1s;
 	animation-fill-mode: forwards;
+}
+
+.minify {
+	--list-flex-direction: column;
+	// --nav-item-font-size: 1.8rem;
+
+	// @include respond(tab-land) {
+	// 	--nav-item-font-size: 1.5rem;
+	// }
 }

@@ -1,52 +1,37 @@
 // COLORS
 // ORIGINAL
-$color-primary: #d8be63;
-$color-primary-light: #eed990;
-$color-primary-dark: #e5bd2b;
-
-$color-ice-gold: #fafad2;
-
-$color-grey-light-1: #f7f7f7;
-$color-grey-light-2: #eee;
-
-$color-grey-dark: #777;
-$color-grey-dark-2: #999;
-$color-grey-dark-3: #333;
-
-$color-white: #fff;
-$color-black: #000;
+// $color-primary: #d8be63;
+// $color-primary-dark: #e5bd2b;
+// $color-secondary: #eed990;
+// $color-background: #fafad2;
 
 // OPTION B
 $color-primary: #c7d36f;
 $color-primary-dark: #9eb23b;
-$color-background: #fcf9c6;
-$color-tertiary: #e0deca;
+// $color-background: #f7f39a; //OPTION
+$color-background: #e0deca;
+// $color-background: #fcf9c6;
+$color-secondary: #e0deca;
 
 // OPTION C
 // $color-primary: #f7f39a;
 // $color-primary-dark: #a3de83;
 // $color-background: #38817a;
-// $color-tertiary: #346473;
+// $color-secondary: #346473;
 
 // OPTION D
 // $color-primary: #f6f578;
 // $color-primary-dark: #f6d743;
 // $color-background: #649d66;
-// $color-tertiary: #06623b;
+// $color-secondary: #06623b;
 
 // OPTION E
-// $color-primary: #ffef82;
-// $color-primary-dark: #efd345;
-// $color-background: #babd42;
-// $color-tertiary: #82954b;
+// $color-primary: #babd42;
+// $color-primary-dark: #82954b;
+// $color-background: #ffef82;
+// $color-secondary: #efd345;
 
 ///////////////////
-// $color-primary: #ecd686;
-// $color-primary: #d8be63;
-$color-primary-light: #eed990;
-// $color-primary-dark: #e5bd2b;
-
-$color-ice-gold: #fafa9d;
 
 $color-secondary-dark: #ff7730;
 
@@ -71,3 +56,23 @@ $text-shadow: $color-grey-dark-3 1px 1px;
 //STYLING
 
 $content-padding: 5rem 0;
+
+// HEADER MINIFICATION
+
+// $primary-flex-direction: column;
+// $header-padding: 3rem;
+// $bg-colour: transparent;
+// $name-font-size: 10rem;
+// $title-font-size: 4rem;
+// $list-flex-direction: column;
+// $nav-item-font-size: 3rem;
+
+// .minify {
+// 	$primary-flex-direction: row;
+// 	$header-padding: 1.5rem;
+// 	$bg-colour: $color-background;
+// 	$name-font-size: 5rem;
+// 	$title-font-size: 2rem;
+// 	$list-flex-direction: row;
+// 	$nav-item-font-size: 1.8rem;
+// }

@@ -138,46 +138,45 @@ document.addEventListener('DOMContentLoaded', setTimeout(function () {
 
 function navAnimation() {
   // const headerName = document.querySelector('.header__name');
-  var introTitle = document.querySelector('.intro__heading--title');
+  var headerTitle = document.querySelector('.header__title');
   var scrollLabel = document.querySelector('.intro__scroll');
-  var navItems = document.querySelectorAll('.navigation__item'); // const welcomeSection = document.querySelector('welcome-section');
-  // headerName.classList.add('appear');
+  var navItems = document.querySelectorAll('.navigation__item'); // headerName.classList.add('appear');
 
-  introTitle.classList.add('appear');
+  headerTitle.classList.add('appear');
   scrollLabel.classList.add('appear');
   navItems.forEach(function (item) {
     return item.classList.add('appear');
-  }); // welcomeSection.classList.add('appear	');
+  });
 } // Intersection Observer to fade out scroll label
 
 
 function scrollLabelFade() {
-  var headerSection = document.querySelector('.intro__heading');
-  var scrollLabel = document.querySelectorAll('.intro__scroll');
+  var contentSection = document.querySelector('.content');
+  var scrollLabel = document.querySelector('.intro__scroll');
+  var header = document.querySelector('.header');
+  var navigation = document.querySelector('.navigation');
 
   var observerCallback = function observerCallback(entries) {
     var _entries = _slicedToArray(entries, 1),
         entry = _entries[0];
 
-    if (!entry.isIntersecting) {
-      scrollLabel.forEach(function (item) {
-        return item.classList.add('fade');
-      });
+    if (entry.isIntersecting) {
+      scrollLabel.classList.add('shift');
+      header.classList.add('minify');
+      navigation.classList.add('minify');
     } else {
-      scrollLabel.forEach(function (item) {
-        return item.classList.remove('fade');
-      });
-    } // if (!entry.isIntersecting) scrollLabel.classList.remove('appear');
-    // else scrollLabel.classList.add('appear');
-
+      scrollLabel.classList.remove('shift');
+      header.classList.remove('minify');
+      navigation.classList.remove('minify');
+    }
   };
 
   var observerOptions = {
     root: null,
-    threshold: 0
+    threshold: 0.075
   };
-  var headerObserver = new IntersectionObserver(observerCallback, observerOptions);
-  headerObserver.observe(headerSection);
+  var introObserver = new IntersectionObserver(observerCallback, observerOptions);
+  introObserver.observe(contentSection);
 }
 },{}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
@@ -207,7 +206,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "58695" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49277" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
