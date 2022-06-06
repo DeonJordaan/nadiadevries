@@ -144,12 +144,12 @@ h2 {
 }
 
 h3 {
-  color: #c7d36f;
+  color: #d8be63;
   text-shadow: #333 1px 1px;
 }
 
 h4 {
-  color: #9eb23b;
+  color: #e5bd2b;
 }
 
 main {
@@ -171,7 +171,7 @@ body {
   position: relative;
 }
 .intro__view {
-  color: #c7d36f;
+  color: #d8be63;
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/hero-desktop-sml-2.05ec918a.jpg");
   background-position: center;
   background-size: cover;
@@ -258,7 +258,7 @@ body {
 }
 
 .shift {
-  transform: translateX(10rem);
+  display: none;
 }
 
 .content {
@@ -285,7 +285,7 @@ body {
 }
 .content__heading {
   font-family: "Alex Brush", cursive;
-  color: #9eb23b;
+  color: #e5bd2b;
   text-shadow: #333 1px 1px;
   font-size: 8rem;
   font-weight: 700;
@@ -306,11 +306,11 @@ body {
   flex-direction: row;
 }
 .content__healthy {
-  color: #c7d36f;
+  color: #d8be63;
   text-shadow: #333 1px 1px;
 }
 .content__coaching {
-  background-color: #e0deca;
+  background-color: #649d66;
   padding: 5rem 0;
   border-radius: 15px;
 }
@@ -318,7 +318,7 @@ body {
   padding: 5rem 0;
 }
 .content__faq {
-  background-color: #e0deca;
+  background-color: #649d66;
   padding: 5rem 0;
   border-radius: 15px;
 }
@@ -335,7 +335,7 @@ body {
 
 button {
   font-size: 1.5rem;
-  background-color: #c7d36f;
+  background-color: #d8be63;
   border: 1px solid #999;
   border-radius: 5px;
   padding: 0.5rem 2rem;
@@ -344,7 +344,7 @@ button {
 
 button:hover,
 button:focus {
-  background-color: #9eb23b;
+  background-color: #e5bd2b;
   border: 1px solid #333;
 }
 
@@ -379,7 +379,7 @@ button:focus {
 .quote {
   padding: 1rem;
   margin: 1rem 2rem;
-  background-color: #e0deca;
+  background-color: #eed990;
   border-radius: 5px;
 }
 
@@ -419,7 +419,7 @@ h4 {
 .form__input:focus {
   outline: none;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
-  border-bottom: 2px solid #c7d36f;
+  border-bottom: 2px solid #d8be63;
 }
 .form__input:focus:invalid {
   border-bottom: 2px solid #ff7730;
@@ -428,7 +428,7 @@ h4 {
   color: #999;
 }
 .form__label {
-  color: #9eb23b;
+  color: #e5bd2b;
   font-size: 1.4rem;
   font-weight: 700;
   margin-left: 2rem;
@@ -477,7 +477,7 @@ footer {
 .footer__content {
   font-size: 1.25rem;
   color: rgb(89, 88, 88);
-  background-color: #e0deca;
+  background-color: #649d66;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -541,7 +541,7 @@ footer {
   font-size: var(--name-font-size);
   font-weight: 600;
   line-height: 1;
-  color: #9eb23b;
+  color: #e5bd2b;
   min-width: 100%;
   transition: font-size 1s;
 }
@@ -556,14 +556,14 @@ footer {
   }
 }
 .header__name a:link, .header__name a:visited {
-  color: #9eb23b;
+  color: #e5bd2b;
 }
 .header__title {
   opacity: 0;
   font-family: "Montserrat", sans-serif;
   font-size: var(--title-font-size);
   font-weight: 500;
-  color: #9eb23b;
+  color: #e5bd2b;
   text-align: center;
   min-width: 100%;
   transition: font-size 1s;
@@ -581,7 +581,7 @@ footer {
 
 .minify {
   --header-padding: 1rem;
-  --bg-colour: #e0deca;
+  --bg-colour: #649d66;
   --name-font-size: 5rem;
   --title-font-size: 1.8rem;
 }
@@ -598,7 +598,7 @@ footer {
 }
 .navigation__item {
   position: relative;
-  color: #9eb23b;
+  color: #e5bd2b;
   background-color: transparent;
   opacity: 0;
   padding: 0 2rem;
@@ -630,7 +630,7 @@ footer {
   right: 0;
   height: 100%;
   width: 3px;
-  background-color: #9eb23b;
+  background-color: #e5bd2b;
   transform: scaleY(0);
   transition: transform 0.3s, width 0.4s ease-out 0.2s;
 }
@@ -639,7 +639,7 @@ footer {
   width: 100%;
 }
 .navigation__link:link, .navigation__link:visited {
-  color: #9eb23b;
+  color: #e5bd2b;
   text-decoration: none;
   display: block;
   position: relative;
