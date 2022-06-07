@@ -149,7 +149,9 @@ h3 {
 }
 
 h4 {
+  font-weight: 700;
   color: #ebd671;
+  text-shadow: #333 1px 1px;
   margin-left: -2rem;
 }
 

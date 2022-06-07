@@ -1,6 +1,8 @@
 @use '../abstracts' as *;
 
 .content {
+	// scroll-snap-type: proximity;
+	// scroll-padding: 30rem;
 	position: relative;
 	display: flex;
 	flex-direction: column;
@@ -36,6 +38,7 @@
 	}
 
 	&__health {
+		// scroll-snap-align: start;
 		display: flex;
 		padding: $content-padding;
 		flex-direction: row;
@@ -51,6 +54,7 @@
 	}
 
 	&__coaching {
+		// scroll-snap-align: start;
 		background-color: $color-background;
 		padding: $content-padding;
 		border-radius: 15px;
@@ -70,6 +74,7 @@
 	}
 
 	&__about {
+		// scroll-snap-align: start;
 		padding: $content-padding;
 
 		@include respond(phone) {
@@ -78,6 +83,7 @@
 	}
 
 	&__faq {
+		// scroll-snap-align: start;
 		background-color: $color-background;
 		padding: $content-padding;
 		border-radius: 15px;
@@ -88,6 +94,7 @@
 	}
 
 	&__contact {
+		// scroll-snap-align: start;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
