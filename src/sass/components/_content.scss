@@ -1,8 +1,6 @@
 @use '../abstracts' as *;
 
 .content {
-	// scroll-snap-type: proximity;
-	// scroll-padding: 30rem;
 	position: relative;
 	display: flex;
 	flex-direction: column;
@@ -23,10 +21,10 @@
 
 	&__heading {
 		font-family: $font-default;
-		color: $color-primary-dark;
-		text-shadow: $text-shadow;
 		font-size: 6rem;
 		font-weight: 700;
+		color: $color-primary-dark;
+		text-shadow: $text-shadow;
 
 		@include respond(tab-land) {
 			font-size: 6rem;
@@ -38,10 +36,10 @@
 	}
 
 	&__health {
-		// scroll-snap-align: start;
 		display: flex;
-		padding: $content-padding;
 		flex-direction: row;
+		padding: $content-padding;
+		scroll-margin-top: 20vh;
 
 		@include respond(phone) {
 			padding: $content-padding-mobile;
@@ -54,10 +52,10 @@
 	}
 
 	&__coaching {
-		// scroll-snap-align: start;
 		background-color: $color-background;
 		padding: $content-padding;
 		border-radius: 15px;
+		scroll-margin-top: 20vh;
 
 		&--list {
 			margin-top: 3rem;
@@ -74,8 +72,8 @@
 	}
 
 	&__about {
-		// scroll-snap-align: start;
 		padding: $content-padding;
+		scroll-margin-top: 20vh;
 
 		@include respond(phone) {
 			padding: $content-padding-mobile;
@@ -83,10 +81,10 @@
 	}
 
 	&__faq {
-		// scroll-snap-align: start;
 		background-color: $color-background;
 		padding: $content-padding;
 		border-radius: 15px;
+		scroll-margin-top: 20vh;
 
 		@include respond(phone) {
 			padding: $content-padding-mobile;
@@ -94,15 +92,14 @@
 	}
 
 	&__contact {
-		// scroll-snap-align: start;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		padding: $content-padding;
+		scroll-margin-top: 20vh;
 
 		&--heading {
 			width: 100%;
-			// text-align: center;
 			padding-bottom: 2rem;
 		}
 
@@ -165,5 +162,8 @@ h3 {
 }
 
 h4 {
-	padding-top: 2rem;
+	margin-top: 2rem;
+	padding-left: 2rem;
+	background-color: $color-grey-dark-2;
+	border-radius: 3px;
 }

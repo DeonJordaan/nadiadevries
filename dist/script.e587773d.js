@@ -137,11 +137,9 @@ document.addEventListener('DOMContentLoaded', setTimeout(function () {
 }, 50));
 
 function navAnimation() {
-  // const headerName = document.querySelector('.header__name');
   var headerTitle = document.querySelector('.header__title');
   var scrollLabel = document.querySelector('.intro__scroll');
-  var navItems = document.querySelectorAll('.navigation__item'); // headerName.classList.add('appear');
-
+  var navItems = document.querySelectorAll('.navigation__item');
   headerTitle.classList.add('appear');
   scrollLabel.classList.add('appear');
   navItems.forEach(function (item) {
@@ -206,7 +204,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "65014" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "61186" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

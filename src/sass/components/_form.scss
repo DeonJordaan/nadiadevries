@@ -15,16 +15,16 @@
 	}
 
 	&__input {
-		font-size: 1.5rem;
+		display: block;
 		font-family: inherit;
+		font-size: 1.5rem;
 		color: inherit;
-		padding: 1.5rem 2rem;
-		border-radius: 3px;
+		width: 100%;
 		background-color: $color-grey-light-1;
 		border: 1px solid $color-grey-dark-2;
 		border-bottom: 2px solid $color-grey-dark-2;
-		width: 100%;
-		display: block;
+		border-radius: 3px;
+		padding: 1.5rem 2rem;
 		transition: all 0.3s;
 
 		&:focus {
@@ -43,12 +43,12 @@
 	}
 
 	&__label {
-		color: $color-primary-dark;
+		display: block;
 		font-size: 1.4rem;
 		font-weight: 700;
+		color: $color-primary-dark;
 		margin-left: 2rem;
 		margin-top: 0.7rem;
-		display: block;
 		transition: all 0.3s;
 	}
 
@@ -67,4 +67,8 @@
 	@include respond(phone) {
 		width: 100%;
 	}
+}
+
+textarea {
+	resize: none;
 }

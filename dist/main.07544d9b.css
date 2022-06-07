@@ -34,6 +34,7 @@ ORDER OF APPLYING MEDIA QUERIES: Base + Typography > General Layout + Grid > Pag
   }
 }
 html {
+  scroll-behavior: smooth;
   font-size: 62.5%;
 }
 @media only screen and (max-width: 37.5em) {
@@ -150,8 +151,7 @@ h3 {
 
 h4 {
   font-weight: 700;
-  color: #ebd671;
-  text-shadow: #333 1px 1px;
+  color: #777;
   margin-left: -2rem;
 }
 
@@ -174,17 +174,17 @@ body {
   position: relative;
 }
 .intro__view {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
   color: #ebd671;
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/hero-desktop-sml-2.05ec918a.jpg");
   background-position: center;
   background-size: cover;
-  box-shadow: 0 12px 12px hsla(0deg, 0%, 0%, 0.35);
   overflow: hidden;
+  box-shadow: 0 12px 12px hsla(0deg, 0%, 0%, 0.35);
   height: 100vh;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  justify-content: center;
 }
 @media only screen and (min-width: 112.5em) {
   .intro__view {
@@ -219,9 +219,9 @@ body {
 .intro__stmnt {
   font-size: 5rem;
   font-weight: 500;
-  transform: translate(0, 23rem);
   padding: 0 5rem;
   word-wrap: break-word;
+  transform: translate(0, 23rem);
 }
 @media only screen and (max-width: 75em) {
   .intro__stmnt {
@@ -241,9 +241,9 @@ body {
 .intro__question {
   font-size: 5rem;
   font-weight: 500;
-  transform: translate(0, 23rem);
   padding: 0 5rem;
   word-wrap: break-word;
+  transform: translate(0, 23rem);
 }
 @media only screen and (max-width: 75em) {
   .intro__question {
@@ -289,10 +289,10 @@ body {
 }
 .content__heading {
   font-family: "Montserrat", sans-serif;
-  color: #ebd671;
-  text-shadow: #333 1px 1px;
   font-size: 6rem;
   font-weight: 700;
+  color: #ebd671;
+  text-shadow: #333 1px 1px;
 }
 @media only screen and (max-width: 75em) {
   .content__heading {
@@ -306,8 +306,9 @@ body {
 }
 .content__health {
   display: flex;
-  padding: 5rem 0;
   flex-direction: row;
+  padding: 5rem 0;
+  scroll-margin-top: 20vh;
 }
 @media only screen and (max-width: 37.5em) {
   .content__health {
@@ -322,6 +323,7 @@ body {
   background-color: #eeeeee;
   padding: 5rem 0;
   border-radius: 15px;
+  scroll-margin-top: 20vh;
 }
 .content__coaching--list {
   margin-top: 3rem;
@@ -337,6 +339,7 @@ body {
 }
 .content__about {
   padding: 5rem 0;
+  scroll-margin-top: 20vh;
 }
 @media only screen and (max-width: 37.5em) {
   .content__about {
@@ -347,6 +350,7 @@ body {
   background-color: #eeeeee;
   padding: 5rem 0;
   border-radius: 15px;
+  scroll-margin-top: 20vh;
 }
 @media only screen and (max-width: 37.5em) {
   .content__faq {
@@ -358,6 +362,7 @@ body {
   flex-direction: column;
   justify-content: center;
   padding: 5rem 0;
+  scroll-margin-top: 20vh;
 }
 .content__contact--heading {
   width: 100%;
@@ -424,7 +429,10 @@ h3 {
 }
 
 h4 {
-  padding-top: 2rem;
+  margin-top: 2rem;
+  padding-left: 2rem;
+  background-color: rgb(197, 196, 196);
+  border-radius: 3px;
 }
 
 .form__group {
@@ -440,16 +448,16 @@ h4 {
   margin-bottom: 2rem;
 }
 .form__input {
-  font-size: 1.5rem;
+  display: block;
   font-family: inherit;
+  font-size: 1.5rem;
   color: inherit;
-  padding: 1.5rem 2rem;
-  border-radius: 3px;
+  width: 100%;
   background-color: #f7f7f7;
   border: 1px solid rgb(197, 196, 196);
   border-bottom: 2px solid rgb(197, 196, 196);
-  width: 100%;
-  display: block;
+  border-radius: 3px;
+  padding: 1.5rem 2rem;
   transition: all 0.3s;
 }
 .form__input:focus {
@@ -464,12 +472,12 @@ h4 {
   color: rgb(197, 196, 196);
 }
 .form__label {
-  color: #ebd671;
+  display: block;
   font-size: 1.4rem;
   font-weight: 700;
+  color: #ebd671;
   margin-left: 2rem;
   margin-top: 0.7rem;
-  display: block;
   transition: all 0.3s;
 }
 .form__input:placeholder-shown + .form__label {
@@ -487,12 +495,16 @@ h4 {
   }
 }
 
+textarea {
+  resize: none;
+}
+
 footer {
-  padding: 0 10rem;
   position: sticky;
   bottom: 0;
   left: 0;
   background-color: #eeeeee;
+  padding: 0 10rem;
 }
 @media only screen and (max-width: 37.5em) {
   footer {
@@ -512,22 +524,22 @@ footer {
 }
 
 .footer__content {
-  font-size: 1.25rem;
-  color: rgb(89, 88, 88);
-  background-color: #649d66;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  font-size: 1.25rem;
+  color: rgb(89, 88, 88);
+  background-color: #649d66;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
   height: auto;
   padding: 1.75rem 3rem;
 }
 .footer__details {
-  font-size: 1.5rem;
-  width: 100%;
-  text-align: center;
   display: inline;
+  width: 100%;
+  font-size: 1.5rem;
+  text-align: center;
 }
 @media only screen and (max-width: 37.5em) {
   .footer__details {
@@ -554,10 +566,10 @@ footer {
   justify-content: space-between;
   align-items: center;
   position: fixed;
-  background-color: var(--bg-colour);
   width: 100vw;
   height: auto;
   padding: var(--header-padding);
+  background-color: var(--bg-colour);
   z-index: 100;
   transition: flex-direction 1s, padding 1s, background-color 1s;
 }
@@ -573,13 +585,13 @@ footer {
   margin: 0 5rem;
 }
 .header__name {
-  opacity: 1;
   font-family: "Alex Brush", cursive;
   font-size: var(--name-font-size);
   font-weight: 600;
   line-height: 1;
-  color: #ebd671;
   min-width: 100%;
+  opacity: 1;
+  color: #ebd671;
   transition: font-size 1s;
 }
 @media only screen and (max-width: 75em) {
@@ -596,13 +608,13 @@ footer {
   color: #ebd671;
 }
 .header__title {
-  opacity: 0;
   font-family: "Montserrat", sans-serif;
   font-size: var(--title-font-size);
   font-weight: 500;
-  color: #ebd671;
   text-align: center;
   min-width: 100%;
+  opacity: 0;
+  color: #ebd671;
   transition: font-size 1s;
 }
 @media only screen and (max-width: 75em) {
@@ -702,7 +714,6 @@ a:link {
 }
 
 .minify {
-  --list-flex-direction: column;
   --nav-item-font-size: 2rem;
 }
 

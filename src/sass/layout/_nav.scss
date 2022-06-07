@@ -1,6 +1,7 @@
 @use '../abstracts' as *;
 
 .navigation {
+	// Define CSS variables and adjust when minify class is added to change header/nav display
 	--list-flex-direction: column;
 	--nav-item-font-size: 2.5rem;
 
@@ -35,10 +36,6 @@
 			text-align: center;
 			padding: 0.8rem;
 		}
-
-		// &:not(:last-child) {
-		// 	margin-bottom: 1rem;
-		// }
 	}
 
 	&__item::before {
@@ -89,10 +86,6 @@ a:link {
 }
 
 .minify {
-	--list-flex-direction: column;
+	// --list-flex-direction: row; // Not adjusting currently, might change later
 	--nav-item-font-size: 2rem;
-
-	// @include respond(tab-land) {
-	// 	--nav-item-font-size: 1.5rem;
-	// }
 }

@@ -1,6 +1,7 @@
 @use '../abstracts' as *;
 
 .header {
+	// Define CSS variables and adjust when minify class is added to change header display
 	--primary-flex-direction: column;
 	--header-padding: 3rem;
 	--bg-colour: transparent;
@@ -12,10 +13,10 @@
 	justify-content: space-between;
 	align-items: center;
 	position: fixed;
-	background-color: var(--bg-colour);
 	width: 100vw;
 	height: auto;
 	padding: var(--header-padding);
+	background-color: var(--bg-colour);
 	z-index: 100;
 	transition: flex-direction 1s, padding 1s, background-color 1s;
 
@@ -31,13 +32,13 @@
 	}
 
 	&__name {
-		opacity: 1;
 		font-family: $font-special;
 		font-size: var(--name-font-size);
 		font-weight: 600;
 		line-height: 1;
-		color: $color-primary-dark;
 		min-width: 100%;
+		opacity: 1;
+		color: $color-primary-dark;
 		transition: font-size 1s;
 
 		@include respond(tab-land) {
@@ -55,13 +56,13 @@
 	}
 
 	&__title {
-		opacity: 0;
 		font-family: $font-default;
 		font-size: var(--title-font-size);
 		font-weight: 500;
-		color: $color-primary-dark;
 		text-align: center;
 		min-width: 100%;
+		opacity: 0;
+		color: $color-primary-dark;
 		transition: font-size 1s;
 
 		@include respond(tab-land) {
@@ -75,14 +76,9 @@
 }
 
 .minify {
-	// --primary-flex-direction: row;
+	// --primary-flex-direction: row; // Not adjusting currently, might change later
 	--header-padding: 1rem;
 	--bg-colour: #649d66;
 	--name-font-size: 5rem;
 	--title-font-size: 1.8rem;
-
-	// @include respond(tab-land) {
-	// 	--name-font-size: 5rem;
-	// 	--title-font-size: 1.8rem;
-	// }
 }

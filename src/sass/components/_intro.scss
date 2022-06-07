@@ -4,6 +4,10 @@
 	position: relative;
 
 	&__view {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		text-align: center;
 		color: $color-primary-dark;
 		background-image: linear-gradient(
 				to bottom,
@@ -13,14 +17,9 @@
 			url('../assets/hero-desktop-sml-2.jpg');
 		background-position: center;
 		background-size: cover;
-		box-shadow: 0 12px 12px hsla(0deg, 0%, 0%, 0.35);
 		overflow: hidden;
+		box-shadow: 0 12px 12px hsla(0deg, 0%, 0%, 0.35);
 		height: 100vh;
-		display: flex;
-		flex-direction: column;
-		text-align: center;
-		justify-content: center;
-		// align-items: center;
 
 		@include respond(big-desktop) {
 			background-image: linear-gradient(
@@ -43,10 +42,6 @@
 			background-position: center;
 			background-size: cover;
 		}
-
-		// @include respond(phone) {
-		// 	width: 100vw;
-		// }
 	}
 
 	&__scroll {
@@ -55,10 +50,6 @@
 		right: 3rem;
 		opacity: 0;
 		transition: all ease-out 1s;
-
-		// @include respond(phone) {
-		// 	display: none;
-		// }
 
 		&--label {
 			width: 5rem;
@@ -75,33 +66,29 @@
 	&__stmnt {
 		font-size: 5rem;
 		font-weight: 500;
-		transform: translate(0, 23rem);
 		padding: 0 5rem;
 		word-wrap: break-word;
-		// color: $color-primary-dark;
+		transform: translate(0, 23rem);
 
 		@include respond(tab-land) {
 			font-size: 4rem;
-			// transform: translate(-15rem, 25rem);
 		}
 
 		@include respond(tab-port) {
 			font-size: 3.5rem;
-			// transform: translate(-9rem, 25rem);
 		}
 
 		@include respond(phone) {
 			font-size: 3rem;
-			// transform: translate(0, 20rem);
 		}
 	}
 
 	&__question {
 		font-size: 5rem;
 		font-weight: 500;
-		transform: translate(0, 23rem);
 		padding: 0 5rem;
 		word-wrap: break-word;
+		transform: translate(0, 23rem);
 
 		@include respond(tab-land) {
 			font-size: 4rem;
@@ -109,17 +96,14 @@
 
 		@include respond(tab-port) {
 			font-size: 3.5rem;
-			// transform: translate(5rem, 23rem);
 		}
 
 		@include respond(phone) {
 			font-size: 3rem;
-			// transform: translate(0, 20rem);
 		}
 	}
 }
 
 .shift {
-	// transform: translateX(10rem);
 	display: none;
 }

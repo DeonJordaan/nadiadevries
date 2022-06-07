@@ -1,11 +1,11 @@
 @use '../abstracts' as *;
 
 footer {
-	padding: 0 10rem;
 	position: sticky;
 	bottom: 0;
 	left: 0;
 	background-color: $color-background;
+	padding: 0 10rem;
 
 	@include respond(phone) {
 		padding: 0 2rem;
@@ -24,27 +24,22 @@ footer {
 
 .footer {
 	&__content {
-		font-size: 1.25rem;
-		color: rgb(89, 88, 88);
-		background-color: $color-primary-darker;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
+		font-size: 1.25rem;
+		color: rgb(89, 88, 88);
+		background-color: $color-primary-darker;
 		border-top-left-radius: 5px;
 		border-top-right-radius: 5px;
-
-		// width: 100%;
 		height: auto;
-		// height: 70px;
-		// justify-content: center;
 		padding: 1.75rem 3rem;
 	}
 	&__details {
-		font-size: 1.5rem;
-		// padding: 3rem 0 0 0;
-		width: 100%;
-		text-align: center;
 		display: inline;
+		width: 100%;
+		font-size: 1.5rem;
+		text-align: center;
 
 		@include respond(phone) {
 			display: flex;

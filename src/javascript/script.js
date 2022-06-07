@@ -8,11 +8,10 @@ document.addEventListener(
 );
 
 function navAnimation() {
-	// const headerName = document.querySelector('.header__name');
 	const headerTitle = document.querySelector('.header__title');
 	const scrollLabel = document.querySelector('.intro__scroll');
 	const navItems = document.querySelectorAll('.navigation__item');
-	// headerName.classList.add('appear');
+
 	headerTitle.classList.add('appear');
 	scrollLabel.classList.add('appear');
 	navItems.forEach((item) => item.classList.add('appear'));

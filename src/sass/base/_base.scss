@@ -1,6 +1,8 @@
 @use '../abstracts' as *;
 
 html {
+	scroll-behavior: smooth;
+
 	//This defines what 1rem is
 	font-size: 62.5%; //1rem = 10px; 10px / 16px = 62.5%
 
@@ -108,18 +110,10 @@ h3 {
 
 h4 {
 	font-weight: 700;
-	color: $color-primary-dark;
-	text-shadow: $text-shadow;
+	color: $color-grey-dark;
+	// text-shadow: $text-shadow;
 	margin-left: -2rem;
 }
-
-// header {
-// 	background: linear-gradient(
-// 		to top,
-// 		rgba($color-primary-light, 1),
-// 		rgba($color-primary-dark, 0.8)
-// 	);
-// }
 
 main {
 	/* make sure to cover the screen */
@@ -132,7 +126,4 @@ main {
 	/* put on top */
 	position: relative;
 	z-index: 1;
-
-	// font: 16px/1.4 system-ui, sans-serif;
-	// padding: 2rem;
 }
