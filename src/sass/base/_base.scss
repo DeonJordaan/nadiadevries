@@ -102,12 +102,13 @@ h2 {
 }
 
 h3 {
-	color: $color-primary;
+	color: $color-primary-dark;
 	text-shadow: $text-shadow;
 }
 
 h4 {
 	color: $color-primary-dark;
+	margin-left: -2rem;
 }
 
 // header {
@@ -123,7 +124,8 @@ main {
 	min-height: 100vh;
 
 	/* need a solid bg to hide the footer */
-	background: white;
+	background: $color-background;
+	// background: white;
 
 	/* put on top */
 	position: relative;

@@ -20,10 +20,10 @@
 	}
 
 	&__heading {
-		font-family: $font-special;
+		font-family: $font-default;
 		color: $color-primary-dark;
 		text-shadow: $text-shadow;
-		font-size: 8rem;
+		font-size: 6rem;
 		font-weight: 700;
 
 		@include respond(tab-land) {
@@ -39,10 +39,14 @@
 		display: flex;
 		padding: $content-padding;
 		flex-direction: row;
+
+		@include respond(phone) {
+			padding: $content-padding-mobile;
+		}
 	}
 
 	&__healthy {
-		color: $color-primary;
+		color: $color-primary-dark;
 		text-shadow: $text-shadow;
 	}
 
@@ -50,16 +54,37 @@
 		background-color: $color-background;
 		padding: $content-padding;
 		border-radius: 15px;
+
+		&--list {
+			margin-top: 3rem;
+			padding-left: 3rem;
+		}
+
+		&--list li {
+			padding: 0.5rem 0;
+		}
+
+		@include respond(phone) {
+			padding: $content-padding-mobile;
+		}
 	}
 
 	&__about {
 		padding: $content-padding;
+
+		@include respond(phone) {
+			padding: $content-padding-mobile;
+		}
 	}
 
 	&__faq {
 		background-color: $color-background;
 		padding: $content-padding;
 		border-radius: 15px;
+
+		@include respond(phone) {
+			padding: $content-padding-mobile;
+		}
 	}
 
 	&__contact {
@@ -73,12 +98,16 @@
 			// text-align: center;
 			padding-bottom: 2rem;
 		}
+
+		@include respond(phone) {
+			padding: $content-padding-mobile;
+		}
 	}
 }
 
 button {
 	font-size: 1.5rem;
-	background-color: $color-primary;
+	background-color: $color-primary-dark;
 	border: 1px solid $color-grey-dark-2;
 	border-radius: 5px;
 	padding: 0.5rem 2rem;
@@ -119,7 +148,7 @@ button:focus {
 .quote {
 	padding: 1rem;
 	margin: 1rem 2rem;
-	background-color: $color-secondary;
+	background-color: $color-grey-dark-2;
 	border-radius: 5px;
 	// width: max-content;
 }

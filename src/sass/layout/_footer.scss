@@ -5,6 +5,7 @@ footer {
 	position: sticky;
 	bottom: 0;
 	left: 0;
+	background-color: $color-background;
 
 	@include respond(phone) {
 		padding: 0 2rem;
@@ -25,12 +26,12 @@ footer {
 	&__content {
 		font-size: 1.25rem;
 		color: rgb(89, 88, 88);
-		background-color: $color-background;
+		background-color: $color-primary-darker;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		border-top-left-radius: 15px;
-		border-top-right-radius: 15px;
+		border-top-left-radius: 5px;
+		border-top-right-radius: 5px;
 
 		// width: 100%;
 		height: auto;
