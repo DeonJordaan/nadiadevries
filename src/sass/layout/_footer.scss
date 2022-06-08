@@ -5,7 +5,7 @@ footer {
 	bottom: 0;
 	left: 0;
 	background-color: $color-background;
-	padding: 0 10rem;
+	padding: 0 15rem;
 
 	@include respond(phone) {
 		padding: 0 2rem;
@@ -30,8 +30,8 @@ footer {
 		font-size: 1.25rem;
 		color: rgb(89, 88, 88);
 		background-color: $color-primary-darker;
-		border-top-left-radius: 5px;
-		border-top-right-radius: 5px;
+		border-top-left-radius: 10px;
+		border-top-right-radius: 10px;
 		height: auto;
 		padding: 1.75rem 3rem;
 	}

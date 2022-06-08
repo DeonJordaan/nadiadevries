@@ -307,7 +307,10 @@ body {
 .content__health {
   display: flex;
   flex-direction: row;
-  padding: 5rem 0;
+  background-color: #f7f7f7;
+  margin: 2rem 0;
+  padding: 3rem 0;
+  border-radius: 10px;
   scroll-margin-top: 20vh;
 }
 @media only screen and (max-width: 37.5em) {
@@ -320,9 +323,10 @@ body {
   text-shadow: #333 1px 1px;
 }
 .content__coaching {
-  background-color: #eeeeee;
-  padding: 5rem 0;
-  border-radius: 15px;
+  background-color: #f7f7f7;
+  margin: 2rem 0;
+  padding: 3rem 0;
+  border-radius: 10px;
   scroll-margin-top: 20vh;
 }
 .content__coaching--list {
@@ -338,7 +342,10 @@ body {
   }
 }
 .content__about {
-  padding: 5rem 0;
+  background-color: #f7f7f7;
+  margin: 2rem 0;
+  padding: 3rem 0;
+  border-radius: 10px;
   scroll-margin-top: 20vh;
 }
 @media only screen and (max-width: 37.5em) {
@@ -347,9 +354,10 @@ body {
   }
 }
 .content__faq {
-  background-color: #eeeeee;
-  padding: 5rem 0;
-  border-radius: 15px;
+  background-color: #f7f7f7;
+  margin: 2rem 0;
+  padding: 3rem 0;
+  border-radius: 10px;
   scroll-margin-top: 20vh;
 }
 @media only screen and (max-width: 37.5em) {
@@ -358,10 +366,13 @@ body {
   }
 }
 .content__contact {
+  background-color: #f7f7f7;
+  margin: 2rem 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 5rem 0;
+  padding: 3rem 0;
+  border-radius: 10px;
   scroll-margin-top: 20vh;
 }
 .content__contact--heading {
@@ -394,6 +405,8 @@ button:focus {
 }
 
 .text-block {
+  background-color: #f7f7f7;
+  border-radius: 5px;
   padding: 2rem 20rem;
 }
 @media only screen and (max-width: 75em) {
@@ -504,7 +517,7 @@ footer {
   bottom: 0;
   left: 0;
   background-color: #eeeeee;
-  padding: 0 10rem;
+  padding: 0 15rem;
 }
 @media only screen and (max-width: 37.5em) {
   footer {
@@ -530,8 +543,8 @@ footer {
   font-size: 1.25rem;
   color: rgb(89, 88, 88);
   background-color: #649d66;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
   height: auto;
   padding: 1.75rem 3rem;
 }

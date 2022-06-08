@@ -38,7 +38,10 @@
 	&__health {
 		display: flex;
 		flex-direction: row;
+		background-color: $color-grey-light-1;
+		margin: $content-margin;
 		padding: $content-padding;
+		border-radius: $content-border-radius;
 		scroll-margin-top: 20vh;
 
 		@include respond(phone) {
@@ -52,9 +55,10 @@
 	}
 
 	&__coaching {
-		background-color: $color-background;
+		background-color: $color-grey-light-1;
+		margin: $content-margin;
 		padding: $content-padding;
-		border-radius: 15px;
+		border-radius: $content-border-radius;
 		scroll-margin-top: 20vh;
 
 		&--list {
@@ -72,7 +76,10 @@
 	}
 
 	&__about {
+		background-color: $color-grey-light-1;
+		margin: $content-margin;
 		padding: $content-padding;
+		border-radius: $content-border-radius;
 		scroll-margin-top: 20vh;
 
 		@include respond(phone) {
@@ -81,9 +88,11 @@
 	}
 
 	&__faq {
-		background-color: $color-background;
+		// background-color: $color-background;
+		background-color: $color-grey-light-1;
+		margin: $content-margin;
 		padding: $content-padding;
-		border-radius: 15px;
+		border-radius: $content-border-radius;
 		scroll-margin-top: 20vh;
 
 		@include respond(phone) {
@@ -92,10 +101,13 @@
 	}
 
 	&__contact {
+		background-color: $color-grey-light-1;
+		margin: $content-margin;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		padding: $content-padding;
+		border-radius: $content-border-radius;
 		scroll-margin-top: 20vh;
 
 		&--heading {
@@ -129,6 +141,8 @@ button:focus {
 }
 
 .text-block {
+	background-color: $color-grey-light-1;
+	border-radius: 5px;
 	padding: 2rem 20rem;
 
 	@include respond(tab-land) {
