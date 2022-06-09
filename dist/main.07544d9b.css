@@ -437,6 +437,16 @@ button:focus {
   border-radius: 5px;
 }
 
+.nbhwc {
+  font-weight: 500;
+  color: rgb(19, 19, 208);
+}
+
+.nbhwc:hover,
+.nbhwc:focus {
+  text-decoration: underline;
+}
+
 h3 {
   padding-left: 4rem;
 }
