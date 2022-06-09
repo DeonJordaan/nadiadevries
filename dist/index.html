@@ -301,14 +301,14 @@
 								<label for="name" class="form__label">Full name</label>
 							</div>
 							<div class="form__group">
-								<input type="email" class="form__input" placeholder="Email address" id="email" required="">
+								<input type="email" class="form__input" placeholder="Email address" id="email" name="email" required="">
 								<label for="email" class="form__label">Email address</label>
 							</div>
 							<div class="form__group">
 								<textarea id="message" name="message" class="form__input" placeholder="Your message" rows="6" maxlength="300" required=""></textarea>
 								<label for="Message" class="form__label">Your message</label>
 							</div>
-							<div class="recaptcha" data-netlify-recaptcha="true"></div>
+							<div class="form__group" data-netlify-recaptcha="true"></div>
 							<div class="form__group">
 								<button id="submitbutton" type="submit" value="Submit" class="btn">
 									<span>SUBMIT</span>
