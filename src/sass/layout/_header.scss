@@ -48,6 +48,10 @@
 		@include respond(phone) {
 			--name-font-size: 5rem;
 		}
+
+		@include respond(sml-phone) {
+			--name-font-size: 4rem;
+		}
 	}
 
 	&__name a:link,
@@ -71,6 +75,10 @@
 
 		@include respond(phone) {
 			--title-font-size: 2.5rem;
+		}
+
+		@include respond(sml-phone) {
+			--title-font-size: 2.25rem;
 		}
 	}
 }

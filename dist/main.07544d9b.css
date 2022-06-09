@@ -316,6 +316,7 @@ body {
 @media only screen and (max-width: 37.5em) {
   .content__health {
     padding: 1.2rem 0;
+    scroll-margin-top: 30vh;
   }
 }
 .content__healthy {
@@ -339,6 +340,7 @@ body {
 @media only screen and (max-width: 37.5em) {
   .content__coaching {
     padding: 1.2rem 0;
+    scroll-margin-top: 30vh;
   }
 }
 .content__about {
@@ -351,6 +353,7 @@ body {
 @media only screen and (max-width: 37.5em) {
   .content__about {
     padding: 1.2rem 0;
+    scroll-margin-top: 30vh;
   }
 }
 .content__faq {
@@ -363,6 +366,7 @@ body {
 @media only screen and (max-width: 37.5em) {
   .content__faq {
     padding: 1.2rem 0;
+    scroll-margin-top: 30vh;
   }
 }
 .content__contact {
@@ -382,6 +386,7 @@ body {
 @media only screen and (max-width: 37.5em) {
   .content__contact {
     padding: 1.2rem 0;
+    scroll-margin-top: 30vh;
   }
 }
 
@@ -518,6 +523,10 @@ h4 {
   }
 }
 
+.recaptcha {
+  transform: scale(0.77);
+}
+
 textarea {
   resize: none;
 }
@@ -627,6 +636,11 @@ footer {
     --name-font-size: 5rem;
   }
 }
+@media only screen and (max-width: 25em) {
+  .header__name {
+    --name-font-size: 4rem;
+  }
+}
 .header__name a:link, .header__name a:visited {
   color: #ebd671;
 }
@@ -648,6 +662,11 @@ footer {
 @media only screen and (max-width: 37.5em) {
   .header__title {
     --title-font-size: 2.5rem;
+  }
+}
+@media only screen and (max-width: 25em) {
+  .header__title {
+    --title-font-size: 2.25rem;
   }
 }
 

@@ -46,6 +46,7 @@
 
 		@include respond(phone) {
 			padding: $content-padding-mobile;
+			scroll-margin-top: 30vh;
 		}
 	}
 
@@ -72,6 +73,7 @@
 
 		@include respond(phone) {
 			padding: $content-padding-mobile;
+			scroll-margin-top: 30vh;
 		}
 	}
 
@@ -84,6 +86,7 @@
 
 		@include respond(phone) {
 			padding: $content-padding-mobile;
+			scroll-margin-top: 30vh;
 		}
 	}
 
@@ -97,6 +100,7 @@
 
 		@include respond(phone) {
 			padding: $content-padding-mobile;
+			scroll-margin-top: 30vh;
 		}
 	}
 
@@ -117,6 +121,7 @@
 
 		@include respond(phone) {
 			padding: $content-padding-mobile;
+			scroll-margin-top: 30vh;
 		}
 	}
 }
