@@ -46,7 +46,7 @@
 
 		@include respond(phone) {
 			padding: $content-padding-mobile;
-			scroll-margin-top: 30vh;
+			// scroll-margin-top: 35vh;
 		}
 	}
 
@@ -73,7 +73,7 @@
 
 		@include respond(phone) {
 			padding: $content-padding-mobile;
-			scroll-margin-top: 30vh;
+			// scroll-margin-top: 35vh;
 		}
 	}
 
@@ -86,7 +86,7 @@
 
 		@include respond(phone) {
 			padding: $content-padding-mobile;
-			scroll-margin-top: 30vh;
+			// scroll-margin-top: 35vh;
 		}
 	}
 
@@ -100,7 +100,7 @@
 
 		@include respond(phone) {
 			padding: $content-padding-mobile;
-			scroll-margin-top: 30vh;
+			// scroll-margin-top: 35vh;
 		}
 	}
 
@@ -121,7 +121,7 @@
 
 		@include respond(phone) {
 			padding: $content-padding-mobile;
-			scroll-margin-top: 30vh;
+			// scroll-margin-top: 35vh;
 		}
 	}
 }

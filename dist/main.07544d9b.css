@@ -316,7 +316,6 @@ body {
 @media only screen and (max-width: 37.5em) {
   .content__health {
     padding: 1.2rem 0;
-    scroll-margin-top: 30vh;
   }
 }
 .content__healthy {
@@ -340,7 +339,6 @@ body {
 @media only screen and (max-width: 37.5em) {
   .content__coaching {
     padding: 1.2rem 0;
-    scroll-margin-top: 30vh;
   }
 }
 .content__about {
@@ -353,7 +351,6 @@ body {
 @media only screen and (max-width: 37.5em) {
   .content__about {
     padding: 1.2rem 0;
-    scroll-margin-top: 30vh;
   }
 }
 .content__faq {
@@ -366,7 +363,6 @@ body {
 @media only screen and (max-width: 37.5em) {
   .content__faq {
     padding: 1.2rem 0;
-    scroll-margin-top: 30vh;
   }
 }
 .content__contact {
@@ -386,7 +382,6 @@ body {
 @media only screen and (max-width: 37.5em) {
   .content__contact {
     padding: 1.2rem 0;
-    scroll-margin-top: 30vh;
   }
 }
 
@@ -756,6 +751,7 @@ a:link {
 }
 
 .minify {
+  --list-flex-direction: row;
   --nav-item-font-size: 2rem;
 }
 
