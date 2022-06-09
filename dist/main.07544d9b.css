@@ -520,6 +520,7 @@ h4 {
 
 .recaptcha {
   transform: scale(0.77);
+  margin: 0 auto;
 }
 
 textarea {
