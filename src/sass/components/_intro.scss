@@ -8,7 +8,8 @@
 		flex-direction: column;
 		justify-content: center;
 		text-align: center;
-		color: $color-primary-dark;
+		color: $color-white;
+		// color: $color-primary-dark;
 		background-image: linear-gradient(
 				to bottom,
 				rgba(0, 0, 0, 0.3),
@@ -55,12 +56,14 @@
 			width: 5rem;
 			height: 5rem;
 			margin-left: 1rem;
+			fill: $color-white;
 		}
 	}
 
 	&__scroll svg {
 		transition: all ease-out 1s;
-		fill: $color-primary-dark;
+		fill: $color-white;
+		// fill: $color-primary-dark;
 	}
 
 	&__stmnt {

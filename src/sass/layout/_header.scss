@@ -2,11 +2,12 @@
 
 .header {
 	// Define CSS variables and adjust when minify class is added to change header display
-	--primary-flex-direction: column;
+	--primary-flex-direction: row;
 	--header-padding: 3rem;
 	--bg-colour: transparent;
 	--name-font-size: 10rem;
 	--title-font-size: 4rem;
+	--logo-size: 15rem;
 
 	display: flex;
 	flex-direction: row;
@@ -38,7 +39,8 @@
 		line-height: 1;
 		min-width: 100%;
 		opacity: 1;
-		color: $color-primary-dark;
+		color: $color-white;
+		// color: $color-primary-dark;
 		transition: font-size 1s;
 
 		@include respond(tab-land) {
@@ -56,17 +58,20 @@
 
 	&__name a:link,
 	&__name a:visited {
-		color: $color-primary-dark;
+		color: $color-white;
 	}
 
 	&__title {
 		font-family: $font-default;
 		font-size: var(--title-font-size);
 		font-weight: 500;
+		text-transform: uppercase;
 		text-align: center;
+		letter-spacing: 0.5rem;
 		min-width: 100%;
 		opacity: 0;
-		color: $color-primary-dark;
+		color: $color-white;
+		// color: $color-primary-dark;
 		transition: font-size 1s;
 
 		@include respond(tab-land) {
@@ -81,6 +86,13 @@
 			--title-font-size: 2.25rem;
 		}
 	}
+
+	&__logo {
+		width: var(--logo-size);
+		height: var(--logo-size);
+		margin-right: 5rem;
+		transition: all 1s;
+	}
 }
 
 .minify {
@@ -89,4 +101,5 @@
 	--bg-colour: #649d66;
 	--name-font-size: 5rem;
 	--title-font-size: 1.8rem;
+	--logo-size: 8rem;
 }

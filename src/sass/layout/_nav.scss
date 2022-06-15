@@ -15,7 +15,8 @@
 
 	&__item {
 		position: relative;
-		color: $color-primary-dark;
+		color: $color-white;
+		// color: $color-primary-dark;
 		background-color: transparent;
 		opacity: 0;
 		padding: 0 2rem;
@@ -45,7 +46,8 @@
 		right: 0;
 		height: 100%;
 		width: 3px;
-		background-color: $color-primary-dark;
+		background-color: $color-white;
+		// background-color: $color-primary-dark;
 		transform: scaleY(0);
 		transition: transform 0.3s, width 0.4s ease-out 0.2s;
 	}
@@ -58,7 +60,8 @@
 
 	&__link:link,
 	&__link:visited {
-		color: $color-primary-dark;
+		color: $color-white;
+		// color: $color-primary-dark;
 		text-decoration: none;
 		display: block;
 		position: relative;
